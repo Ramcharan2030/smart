@@ -1,0 +1,212 @@
+{
+  "project_name": "AutoSolutions.in",
+  "domain": "AI Automation Agency",
+  "theme": "LIGHT",
+  "archetype": "3 (Pastel & Soft / Premium SaaS Hybrid)",
+  "design_philosophy": "Apple meets premium SaaS — ultra-clean, expansive breathing room, glassmorphism cards with subtle borders. A godly conversion-driven aesthetic focusing on white themes and glassmorphic overlays.",
+  "colors": {
+    "background": {
+      "primary": "#FFFFFF",
+      "secondary": "#F7F7F8",
+      "glass": "rgba(255, 255, 255, 0.7)"
+    },
+    "text": {
+      "heading": "#0A0A1A",
+      "body": "#4A4A5A",
+      "muted": "#8A8A9A"
+    },
+    "brand": {
+      "primary": "#6C5CE7",
+      "primary_hover": "#5A4BD1",
+      "success": "#10B981"
+    },
+    "border": {
+      "subtle": "rgba(10, 10, 26, 0.06)",
+      "glass": "rgba(255, 255, 255, 0.4)"
+    }
+  },
+  "typography": {
+    "primary_font": "Plus Jakarta Sans",
+    "secondary_font": "Plus Jakarta Sans",
+    "scale": {
+      "h1": "text-5xl sm:text-6xl+ tracking-tighter font-bold",
+      "h2": "text-4xl sm:text-5xl tracking-tight font-semibold",
+      "h3": "text-2xl sm:text-3xl tracking-tight font-semibold",
+      "h4": "text-xl sm:text-2xl font-medium",
+      "body": "text-base sm:text-lg leading-relaxed text-[#4A4A5A]",
+      "label": "text-xs tracking-[0.2em] uppercase font-bold text-[#6C5CE7]"
+    },
+    "rules": [
+      "No Inter for headings (per E1 rules). Use Plus Jakarta Sans exclusively for a unified, premium SaaS identity.",
+      "Headlines > 32px MUST use tracking-tight or tracking-tighter.",
+      "Overlines/Labels MUST be Uppercase + Tiny + Wide Spacing."
+    ]
+  },
+  "layout_and_spacing": {
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "section_padding": "py-24 md:py-32",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8",
+    "rules": [
+      "Generous Spacing: Use 2-3x more spacing than typical defaults.",
+      "Never center-align paragraphs; left-align dense text for readability.",
+      "Optical alignment over geometrical alignment for buttons with icons."
+    ]
+  },
+  "surfaces_and_components": {
+    "cards_glassmorphism": {
+      "classes": "backdrop-blur-2xl bg-white/70 border border-white/40 shadow-[0_8px_32px_rgba(0,0,0,0.04)] rounded-2xl p-8",
+      "hover": "hover:-translate-y-1 hover:shadow-[0_12px_48px_rgba(108,92,231,0.12)] transition-all duration-300 ease-out"
+    },
+    "cards_solid": {
+      "classes": "bg-[#F7F7F8] border border-black/5 rounded-2xl p-8"
+    },
+    "navbar": {
+      "classes": "fixed top-0 w-full z-50 backdrop-blur-xl bg-white/70 border-b border-black/5"
+    },
+    "buttons": {
+      "primary": "bg-[#6C5CE7] text-white hover:bg-[#5A4BD1] rounded-full px-8 py-4 font-semibold shadow-[0_4px_14px_0_rgba(108,92,231,0.39)] hover:shadow-[0_6px_20px_rgba(108,92,231,0.23)] hover:-translate-y-0.5 transition-all duration-200",
+      "secondary": "bg-white text-[#0A0A1A] border border-black/10 hover:bg-black/5 rounded-full px-8 py-4 font-semibold transition-all duration-200",
+      "whatsapp": "bg-[#10B981] text-white hover:bg-[#0D9668] rounded-full px-8 py-4 font-semibold shadow-lg transition-all duration-200"
+    }
+  },
+  "animations_and_interactions": {
+    "engine": "Framer Motion + GSAP + ScrollTrigger + Lenis.js",
+    "features": [
+      {
+        "name": "3D Particle Neural Network Orb",
+        "description": "Hero section Three.js/React Three Fiber particle orb, soft electric violet and white glowing nodes, rotates and reacts to mouse movement."
+      },
+      {
+        "name": "Text Scramble Animation",
+        "description": "Hero headline 'We Automate. You Grow.' scrambles in on page load (GSAP or custom React hook)."
+      },
+      {
+        "name": "Scroll-Triggered 3D Card Flip",
+        "description": "Service cards flip in using rotateX + opacity + translateY on scroll (Framer Motion)."
+      },
+      {
+        "name": "Magnetic Buttons",
+        "description": "All CTAs pull slightly toward the cursor on hover (Framer Motion useMouse)."
+      },
+      {
+        "name": "Custom Cursor",
+        "description": "Glowing dot cursor (mix-blend-mode: difference or soft violet glow) with fading trail."
+      },
+      {
+        "name": "Smooth Scroll",
+        "description": "Lenis.js for momentum scrolling."
+      },
+      {
+        "name": "Infinite Horizontal Scroll",
+        "description": "Industry logos ticker tape running continuously."
+      },
+      {
+        "name": "Counting Numbers",
+        "description": "Stats section (500+, 10M+, 98%, 24/7) count up from 0 when scrolled into view."
+      },
+      {
+        "name": "Parallax Layers",
+        "description": "Background dots grid and glowing blobs moving at different speeds on scroll."
+      }
+    ],
+    "accessibility": "Respect prefers-reduced-motion for all heavy animations."
+  },
+  "pages_and_sections": [
+    {
+      "name": "Navbar",
+      "content": "Sticky glassmorphism header, Logo, Links, Primary CTA"
+    },
+    {
+      "name": "Hero",
+      "content": "3D Orb, Text Scramble H1 'We Automate. You Grow.', Subheadline, CTA, Floating 'Trusted by 500+' badge"
+    },
+    {
+      "name": "Social Proof",
+      "content": "Infinite ticker of clients/industries"
+    },
+    {
+      "name": "Services",
+      "content": "6 Cards with 3D Flip (Voice Agent, WhatsApp Bot, Smart Booking, AI Support, Lead Bot, Analytics)"
+    },
+    {
+      "name": "How It Works",
+      "content": "3-Step Process (Understand -> Build -> Watch) in a bento or timeline layout"
+    },
+    {
+      "name": "Industries",
+      "content": "8 Cards with Vanilla Tilt.js effect (Clinic, Hospital, Pharmacy, Cafe, Restaurant, Retail, Real Estate, Education)"
+    },
+    {
+      "name": "Stats",
+      "content": "4 counters in a highly padded, premium section"
+    },
+    {
+      "name": "Pricing",
+      "content": "3 Tiers (Starter, Growth [highlighted violet], Enterprise), Monthly/Yearly toggle"
+    },
+    {
+      "name": "Testimonials",
+      "content": "Auto-slide carousel with glassmorphic cards"
+    },
+    {
+      "name": "FAQ",
+      "content": "Shadcn Accordion styled to premium minimal aesthetic"
+    },
+    {
+      "name": "Contact & Booking",
+      "content": "Calendly embed placeholder + MongoDB Form + WhatsApp CTA"
+    },
+    {
+      "name": "Footer",
+      "content": "Tagline 'Automating India's Businesses, One Bot at a Time.', Clean link structures"
+    }
+  ],
+  "media": {
+    "instructions": "Use these high-quality Unsplash/Pexels images for the Industries section and background contextual elements. Apply subtle overlay (#FFFFFF at 10-30%) or use as card backgrounds to maintain the white theme.",
+    "images": [
+      {
+        "category": "industry_hospital",
+        "url": "https://images.unsplash.com/photo-1777269749032-d8d458ae594d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjbGluaWMlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NzgyMjg4NzJ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Empty hospital corridor with clean bright aesthetic"
+      },
+      {
+        "category": "industry_clinic",
+        "url": "https://images.pexels.com/photos/7789620/pexels-photo-7789620.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Clean, well-equipped modern medical examination room"
+      },
+      {
+        "category": "industry_retail",
+        "url": "https://images.unsplash.com/photo-1777628530456-bb93d3a03faf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwyfHxyZXRhaWwlMjBzdG9yZSUyMGFlc3RoZXRpY3xlbnwwfHx8fDE3NzgyMjg4NzJ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Premium clothing boutique interior"
+      },
+      {
+        "category": "industry_cafe",
+        "url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80",
+        "description": "Fallback URL for Cafe (if needed) - High-end modern coffee shop"
+      }
+    ]
+  },
+  "testing": {
+    "requirements": "All interactive elements, buttons, inputs, toggles, and forms MUST include 'data-testid' attributes (e.g., data-testid='pricing-toggle-yearly', data-testid='contact-form-submit')."
+  },
+  "tech_stack_dependencies": [
+    "lucide-react",
+    "framer-motion",
+    "gsap",
+    "@studio-freight/lenis",
+    "three",
+    "@react-three/fiber",
+    "@react-three/drei",
+    "react-parallax-tilt"
+  ],
+  "instructions_to_main_agent": [
+    "Execute strictly within the LIGHT theme constraint. Do not use dark mode inversion.",
+    "Implement the Three.js orb in the Hero using @react-three/fiber and @react-three/drei. Keep it white/violet themed.",
+    "Do not use placeholder image services like via.placeholder.com. Use the Unsplash/Pexels URLs provided in this document.",
+    "For the custom cursor, map it to window mousemove and use framer-motion or GSAP for the trailing effect.",
+    "For the magnetic buttons, calculate mouse position relative to button center on hover.",
+    "Strictly follow the typographic scale. Max size for H1 is text-6xl fluid.",
+    "Ensure glassmorphism has a subtle white border (border-white/40) to define edges against the white/gray background.",
+    "Do not overdo gradients; rely on pure white and soft gray (#F7F7F8) with the violet (#6C5CE7) acting as the main pop of color."
+  ]
+}
