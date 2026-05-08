@@ -40,12 +40,12 @@ export default function FAQ() {
         >
             <div className="max-w-4xl mx-auto px-6 md:px-10">
                 <div className="text-center mb-12 md:mb-16">
-                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#F97316] mb-4">
+                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#6C5CE7] mb-4">
                         Frequently asked
                     </p>
                     <h2 className="font-extrabold tracking-tighter text-[#0A0A1A] text-4xl sm:text-5xl leading-[1.04]">
                         Got questions?{" "}
-                        <span className="text-[#F97316]">We've got you.</span>
+                        <span className="text-[#6C5CE7]">We've got you.</span>
                     </h2>
                 </div>
 
@@ -54,7 +54,7 @@ export default function FAQ() {
                         <AccordionItem
                             key={i}
                             value={`item-${i}`}
-                            className="rounded-2xl bg-white border border-black/5 px-5 md:px-6 data-[state=open]:shadow-[0_12px_40px_rgba(249,115,22,0.08)] transition-all"
+                            className="rounded-2xl bg-white border border-black/5 px-5 md:px-6 data-[state=open]:shadow-[0_12px_40px_rgba(108,92,231,0.08)] transition-all"
                             data-testid={`faq-item-${i}`}
                         >
                             <AccordionTrigger className="py-5 text-left text-[15px] md:text-base font-semibold text-[#0A0A1A] hover:no-underline">

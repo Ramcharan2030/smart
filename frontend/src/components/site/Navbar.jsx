@@ -50,13 +50,13 @@ export default function Navbar() {
                     className="flex items-center gap-2 group"
                     data-testid="nav-logo"
                 >
-                    <span className="relative flex items-center justify-center w-8 h-8 rounded-lg bg-[#F97316] text-white shadow-[0_4px_18px_rgba(249,115,22,0.4)]">
+                    <span className="relative flex items-center justify-center w-8 h-8 rounded-lg bg-[#6C5CE7] text-white shadow-[0_4px_18px_rgba(108,92,231,0.4)]">
                         <Sparkles className="w-4 h-4" strokeWidth={2.5} />
                         <span className="absolute inset-0 rounded-lg as-pulse-glow" />
                     </span>
                     <span className="font-extrabold text-[18px] tracking-tight text-[#0A0A1A]">
                         AutoSolutions
-                        <span className="text-[#F97316]">.in</span>
+                        <span className="text-[#6C5CE7]">.in</span>
                     </span>
                 </button>
 
@@ -84,7 +84,7 @@ export default function Navbar() {
                             scrollTo("#contact");
                         }}
                         data-testid="nav-book-demo-btn"
-                        className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-[#F97316] text-white text-sm font-semibold shadow-[0_6px_22px_rgba(249,115,22,0.45)] hover:bg-[#EA580C] transition-colors"
+                        className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-[#6C5CE7] text-white text-sm font-semibold shadow-[0_6px_22px_rgba(108,92,231,0.45)] hover:bg-[#5A4BD1] transition-colors"
                     >
                         Book a Free Demo
                     </MagneticButton>
@@ -118,7 +118,7 @@ export default function Navbar() {
                         <button
                             onClick={() => scrollTo("#contact")}
                             data-testid="nav-mobile-book-demo"
-                            className="mt-2 inline-flex justify-center px-5 py-3 rounded-full bg-[#F97316] text-white text-sm font-semibold"
+                            className="mt-2 inline-flex justify-center px-5 py-3 rounded-full bg-[#6C5CE7] text-white text-sm font-semibold"
                         >
                             Book a Free Demo
                         </button>

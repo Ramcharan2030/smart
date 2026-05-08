@@ -21,7 +21,7 @@ export default function CTABanner() {
                     className="absolute inset-0"
                     style={{
                         background:
-                            "linear-gradient(120deg, #F97316 0%, #EA580C 60%, #9A3412 100%)",
+                            "linear-gradient(120deg, #6C5CE7 0%, #5A4BD1 60%, #4737B0 100%)",
                     }}
                     aria-hidden
                 />

@@ -59,7 +59,7 @@ function Counter({ stat, active, delay = 0 }) {
     return (
         <span className="font-extrabold tracking-tighter text-[#0A0A1A] text-5xl sm:text-6xl">
             {stat.format(val)}
-            <span className="text-[#F97316]">{stat.suffix}</span>
+            <span className="text-[#6C5CE7]">{stat.suffix}</span>
         </span>
     );
 }
@@ -94,12 +94,12 @@ export default function Stats() {
         >
             <div className="max-w-7xl mx-auto px-6 md:px-10">
                 <div className="max-w-3xl mb-14">
-                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#F97316] mb-4">
+                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#6C5CE7] mb-4">
                         Numbers don't lie
                     </p>
                     <h2 className="font-extrabold tracking-tighter text-[#0A0A1A] text-4xl sm:text-5xl leading-[1.04]">
                         The kind of growth you can{" "}
-                        <span className="text-[#F97316]">measure.</span>
+                        <span className="text-[#6C5CE7]">measure.</span>
                     </h2>
                 </div>
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">

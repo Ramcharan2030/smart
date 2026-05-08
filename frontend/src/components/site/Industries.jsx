@@ -69,12 +69,12 @@ export default function Industries() {
         >
             <div className="max-w-7xl mx-auto px-6 md:px-10">
                 <div className="max-w-3xl mb-14 md:mb-20">
-                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#F97316] mb-4">
+                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#6C5CE7] mb-4">
                         Industries we serve
                     </p>
                     <h2 className="font-extrabold tracking-tighter text-[#0A0A1A] text-4xl sm:text-5xl leading-[1.04]">
                         Built for the businesses that{" "}
-                        <span className="text-[#F97316]">power India.</span>
+                        <span className="text-[#6C5CE7]">power India.</span>
                     </h2>
                 </div>
 
@@ -90,7 +90,7 @@ export default function Industries() {
                             <Tilt
                                 glareEnable
                                 glareMaxOpacity={0.12}
-                                glareColor="#F97316"
+                                glareColor="#6C5CE7"
                                 glarePosition="all"
                                 glareBorderRadius="20px"
                                 scale={1.02}
@@ -99,10 +99,10 @@ export default function Industries() {
                                 transitionSpeed={1200}
                             >
                                 <div
-                                    className="relative h-full rounded-2xl p-7 bg-white border border-black/5 hover:border-[#F97316]/25 transition-colors"
+                                    className="relative h-full rounded-2xl p-7 bg-white border border-black/5 hover:border-[#6C5CE7]/25 transition-colors"
                                     data-testid={`industry-card-${i}`}
                                 >
-                                    <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-[#F7F7F8] text-[#F97316] border border-[#F97316]/15 mb-5">
+                                    <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-[#F7F7F8] text-[#6C5CE7] border border-[#6C5CE7]/15 mb-5">
                                         <it.icon size={20} strokeWidth={2} />
                                     </div>
                                     <h3 className="font-bold text-lg tracking-tight text-[#0A0A1A] mb-2">

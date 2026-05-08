@@ -31,12 +31,12 @@ export default function HowItWorks() {
         >
             <div className="max-w-7xl mx-auto px-6 md:px-10">
                 <div className="max-w-3xl mb-14 md:mb-20">
-                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#F97316] mb-4">
+                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#6C5CE7] mb-4">
                         How it works
                     </p>
                     <h2 className="font-extrabold tracking-tighter text-[#0A0A1A] text-4xl sm:text-5xl leading-[1.04]">
                         From first call to fully automated —{" "}
-                        <span className="text-[#F97316]">in under 2 weeks.</span>
+                        <span className="text-[#6C5CE7]">in under 2 weeks.</span>
                     </h2>
                 </div>
 
@@ -49,7 +49,7 @@ export default function HowItWorks() {
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 1.2, ease: "easeOut" }}
                         style={{ transformOrigin: "left center" }}
-                        className="hidden md:block absolute top-[88px] left-[12%] right-[12%] h-px bg-gradient-to-r from-transparent via-[#F97316]/40 to-transparent"
+                        className="hidden md:block absolute top-[88px] left-[12%] right-[12%] h-px bg-gradient-to-r from-transparent via-[#6C5CE7]/40 to-transparent"
                     />
                     {STEPS.map((s, i) => (
                         <motion.div
@@ -71,7 +71,7 @@ export default function HowItWorks() {
                             >
                                 {s.n}
                             </span>
-                            <div className="relative inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#F97316] text-white shadow-[0_10px_30px_rgba(249,115,22,0.4)] mb-6">
+                            <div className="relative inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#6C5CE7] text-white shadow-[0_10px_30px_rgba(108,92,231,0.4)] mb-6">
                                 <s.icon size={22} strokeWidth={2} />
                             </div>
                             <h3 className="font-bold text-xl tracking-tight text-[#0A0A1A] mb-3">

@@ -29,7 +29,7 @@ export default function Hero() {
                 style={{
                     width: 480,
                     height: 480,
-                    background: "rgba(249, 115, 22, 0.35)",
+                    background: "rgba(108, 92, 231, 0.35)",
                     top: -100,
                     right: -120,
                 }}
@@ -39,7 +39,7 @@ export default function Hero() {
                 style={{
                     width: 360,
                     height: 360,
-                    background: "rgba(249, 115, 22, 0.2)",
+                    background: "rgba(108, 92, 231, 0.2)",
                     bottom: -120,
                     left: -80,
                 }}
@@ -57,8 +57,8 @@ export default function Hero() {
                         data-testid="hero-trust-badge"
                     >
                         <span className="relative flex h-2 w-2">
-                            <span className="absolute inline-flex h-full w-full rounded-full bg-[#F97316] opacity-75 animate-ping" />
-                            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#F97316]" />
+                            <span className="absolute inline-flex h-full w-full rounded-full bg-[#6C5CE7] opacity-75 animate-ping" />
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#6C5CE7]" />
                         </span>
                         Trusted by 500+ Businesses Across India
                         <span className="ml-1">🇮🇳</span>
@@ -77,7 +77,7 @@ export default function Hero() {
                             data-testid="hero-headline-1"
                         />
                         <br />
-                        <span className="bg-gradient-to-r from-[#F97316] via-[#F97316] to-[#0A0A1A] bg-clip-text text-transparent">
+                        <span className="bg-gradient-to-r from-[#6C5CE7] via-[#6C5CE7] to-[#0A0A1A] bg-clip-text text-transparent">
                             <TextScramble
                                 text="You Grow."
                                 duration={1300}
@@ -111,7 +111,7 @@ export default function Hero() {
                         <MagneticButton
                             onClick={() => scrollTo("#contact")}
                             data-testid="hero-get-started-btn"
-                            className="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-[#F97316] text-white font-semibold shadow-[0_8px_28px_rgba(249,115,22,0.45)] hover:bg-[#EA580C] transition-colors"
+                            className="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-[#6C5CE7] text-white font-semibold shadow-[0_8px_28px_rgba(108,92,231,0.45)] hover:bg-[#5A4BD1] transition-colors"
                         >
                             <span className="inline-flex items-center gap-2">
                                 Get Started Free
@@ -124,7 +124,7 @@ export default function Hero() {
                             className="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-white text-[#0A0A1A] border border-black/10 font-semibold hover:bg-black/[0.03] transition-colors"
                         >
                             <span className="inline-flex items-center gap-2">
-                                <Play size={16} className="text-[#F97316]" />
+                                <Play size={16} className="text-[#6C5CE7]" />
                                 Watch Demo
                             </span>
                         </MagneticButton>
@@ -147,7 +147,7 @@ export default function Hero() {
                                 key={c}
                                 className="inline-flex items-center gap-2"
                             >
-                                <span className="h-1.5 w-1.5 rounded-full bg-[#F97316]" />
+                                <span className="h-1.5 w-1.5 rounded-full bg-[#6C5CE7]" />
                                 {c}
                             </span>
                         ))}
@@ -202,7 +202,7 @@ function FloatingPill({ label, icon, style, delay = 1 }) {
             className="absolute as-glass px-3 py-1.5 rounded-full text-[12px] font-semibold text-[#0A0A1A] flex items-center gap-1.5 shadow-[0_8px_24px_rgba(10,10,26,0.06)]"
             style={style}
         >
-            <span className="text-[#F97316]">{icon}</span>
+            <span className="text-[#6C5CE7]">{icon}</span>
             {label}
         </motion.div>
     );

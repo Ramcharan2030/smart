@@ -42,7 +42,7 @@ export default function Footer() {
                 style={{
                     width: 480,
                     height: 480,
-                    background: "rgba(249,115,22,0.45)",
+                    background: "rgba(108,92,231,0.45)",
                     top: -200,
                     left: "30%",
                     opacity: 0.18,
@@ -52,12 +52,12 @@ export default function Footer() {
             <div className="relative max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-10">
                 <div className="md:col-span-5">
                     <div className="flex items-center gap-2">
-                        <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-[#F97316] text-white">
+                        <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-[#6C5CE7] text-white">
                             <Sparkles size={16} strokeWidth={2.5} />
                         </span>
                         <span className="font-extrabold text-lg tracking-tight">
                             AutoSolutions
-                            <span className="text-[#F97316]">.in</span>
+                            <span className="text-[#6C5CE7]">.in</span>
                         </span>
                     </div>
                     <p className="mt-4 text-white/70 max-w-md leading-relaxed">
@@ -77,7 +77,7 @@ export default function Footer() {
                                 href={href}
                                 aria-label={label}
                                 data-testid={`social-${label.toLowerCase().split(" ")[0]}`}
-                                className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-white/8 hover:bg-[#F97316] border border-white/10 transition-colors"
+                                className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-white/8 hover:bg-[#6C5CE7] border border-white/10 transition-colors"
                             >
                                 <Icon size={16} />
                             </a>
@@ -88,7 +88,7 @@ export default function Footer() {
                 <div className="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8">
                     {SECTIONS.map((s) => (
                         <div key={s.title}>
-                            <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#F97316] mb-4">
+                            <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#6C5CE7] mb-4">
                                 {s.title}
                             </p>
                             <ul className="space-y-3">

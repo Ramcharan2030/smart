@@ -59,13 +59,13 @@ export default function Services() {
         >
             <div className="max-w-7xl mx-auto px-6 md:px-10">
                 <div className="max-w-3xl mb-14 md:mb-20">
-                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#F97316] mb-4">
+                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#6C5CE7] mb-4">
                         Our AI Solutions
                     </p>
                     <h2 className="font-extrabold tracking-tighter text-[#0A0A1A] text-4xl sm:text-5xl lg:text-[56px] leading-[1.02]">
                         Six building blocks.
                         <br />
-                        <span className="text-[#F97316]">
+                        <span className="text-[#6C5CE7]">
                             One unstoppable business.
                         </span>
                     </h2>
@@ -89,13 +89,13 @@ export default function Services() {
                                 ease: [0.25, 1, 0.5, 1],
                             }}
                             style={{ transformPerspective: 1000 }}
-                            className="group relative rounded-2xl p-7 as-glass hover:-translate-y-1 hover:shadow-[0_18px_60px_rgba(249,115,22,0.15)] transition-all duration-300"
+                            className="group relative rounded-2xl p-7 as-glass hover:-translate-y-1 hover:shadow-[0_18px_60px_rgba(108,92,231,0.15)] transition-all duration-300"
                             data-testid={`service-card-${i}`}
                         >
                             {/* Icon block */}
-                            <div className="relative mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#F97316] text-white shadow-[0_8px_24px_rgba(249,115,22,0.4)]">
+                            <div className="relative mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#6C5CE7] text-white shadow-[0_8px_24px_rgba(108,92,231,0.4)]">
                                 <s.icon size={20} strokeWidth={2} />
-                                <span className="absolute -inset-1 rounded-xl bg-[#F97316] opacity-20 blur-md -z-10" />
+                                <span className="absolute -inset-1 rounded-xl bg-[#6C5CE7] opacity-20 blur-md -z-10" />
                             </div>
                             <h3 className="font-bold text-xl tracking-tight text-[#0A0A1A] mb-3">
                                 {s.title}
@@ -109,7 +109,7 @@ export default function Services() {
                                         key={b}
                                         className="flex items-center gap-2 text-sm text-[#0A0A1A]/80"
                                     >
-                                        <span className="h-1.5 w-1.5 rounded-full bg-[#F97316]" />
+                                        <span className="h-1.5 w-1.5 rounded-full bg-[#6C5CE7]" />
                                         {b}
                                     </li>
                                 ))}

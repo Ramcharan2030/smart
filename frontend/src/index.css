@@ -8,9 +8,9 @@
     --as-ink: #0a0a1a;
     --as-ink-soft: #4a4a5a;
     --as-ink-muted: #8a8a9a;
-    --as-violet: #f97316;
-    --as-violet-hover: #ea580c;
-    --as-violet-soft: rgba(249, 115, 22, 0.08);
+    --as-violet: #6c5ce7;
+    --as-violet-hover: #5a4bd1;
+    --as-violet-soft: rgba(108, 92, 231, 0.08);
     --as-border: rgba(10, 10, 26, 0.06);
     --as-glass: rgba(255, 255, 255, 0.7);
 }
@@ -37,7 +37,7 @@ body {
 }
 
 ::selection {
-    background: rgba(249, 115, 22, 0.18);
+    background: rgba(108, 92, 231, 0.18);
     color: var(--as-ink);
 }
 
@@ -49,11 +49,11 @@ body {
     background: var(--as-bg);
 }
 ::-webkit-scrollbar-thumb {
-    background: rgba(249, 115, 22, 0.18);
+    background: rgba(108, 92, 231, 0.18);
     border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(249, 115, 22, 0.32);
+    background: rgba(108, 92, 231, 0.32);
 }
 
 /* Custom cursor overlays the native cursor (native cursor stays visible
@@ -118,10 +118,10 @@ body {
 @keyframes as-pulse-glow {
     0%,
     100% {
-        box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.35);
+        box-shadow: 0 0 0 0 rgba(108, 92, 231, 0.35);
     }
     50% {
-        box-shadow: 0 0 0 18px rgba(249, 115, 22, 0);
+        box-shadow: 0 0 0 18px rgba(108, 92, 231, 0);
     }
 }
 .as-pulse-glow {
@@ -140,12 +140,12 @@ body {
     background:
         radial-gradient(
             900px 600px at 80% 10%,
-            rgba(249, 115, 22, 0.12),
+            rgba(108, 92, 231, 0.12),
             transparent 60%
         ),
         radial-gradient(
             700px 500px at 10% 90%,
-            rgba(249, 115, 22, 0.08),
+            rgba(108, 92, 231, 0.08),
             transparent 60%
         );
 }
