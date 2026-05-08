@@ -47,17 +47,14 @@ export default function Navbar() {
                 {/* Logo */}
                 <button
                     onClick={() => scrollTo("#home")}
-                    className="flex items-center gap-2 group"
+                    className="flex items-center group"
                     data-testid="nav-logo"
                 >
-                    <span className="relative flex items-center justify-center w-8 h-8 rounded-lg bg-[#6C5CE7] text-white shadow-[0_4px_18px_rgba(108,92,231,0.4)]">
-                        <Sparkles className="w-4 h-4" strokeWidth={2.5} />
-                        <span className="absolute inset-0 rounded-lg as-pulse-glow" />
-                    </span>
-                    <span className="font-extrabold text-[18px] tracking-tight text-[#0A0A1A]">
-                        AutoSolutions
-                        <span className="text-[#6C5CE7]">.in</span>
-                    </span>
+                    <img 
+                        src="/logo.jpg" 
+                        alt="AutoSolutions.in Logo" 
+                        className="h-16 w-auto object-contain py-1" 
+                    />
                 </button>
 
                 {/* Links */}

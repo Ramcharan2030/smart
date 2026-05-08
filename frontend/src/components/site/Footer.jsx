@@ -51,14 +51,12 @@ export default function Footer() {
 
             <div className="relative max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-10">
                 <div className="md:col-span-5">
-                    <div className="flex items-center gap-2">
-                        <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-[#6C5CE7] text-white">
-                            <Sparkles size={16} strokeWidth={2.5} />
-                        </span>
-                        <span className="font-extrabold text-lg tracking-tight">
-                            AutoSolutions
-                            <span className="text-[#6C5CE7]">.in</span>
-                        </span>
+                    <div className="flex items-center">
+                        <img 
+                            src="/logo.jpg" 
+                            alt="AutoSolutions.in Logo" 
+                            className="h-16 w-auto object-contain bg-white rounded-md p-1" 
+                        />
                     </div>
                     <p className="mt-4 text-white/70 max-w-md leading-relaxed">
                         Automating India's businesses, one bot at a time. Built

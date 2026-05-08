@@ -2,7 +2,6 @@ import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import SmoothScroll from "@/components/site/SmoothScroll";
-import CustomCursor from "@/components/site/CustomCursor";
 import Navbar from "@/components/site/Navbar";
 import Hero from "@/components/site/Hero";
 import SocialProofTicker from "@/components/site/SocialProofTicker";
@@ -19,7 +18,6 @@ import Footer from "@/components/site/Footer";
 function Landing() {
     return (
         <SmoothScroll>
-            <CustomCursor />
             <Navbar />
             <main>
                 <Hero />

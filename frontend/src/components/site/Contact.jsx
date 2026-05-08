@@ -1,10 +1,7 @@
 import { useState } from "react";
-import axios from "axios";
+import { supabase } from "@/lib/supabase";
 import { Calendar, MessageCircle, Phone, Mail, Loader2, Check } from "lucide-react";
 import MagneticButton from "./MagneticButton";
-
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
 
 const BUSINESS_TYPES = [
     "Clinic",
@@ -45,8 +42,10 @@ export default function Contact() {
         try {
             const payload = { ...form };
             if (!payload.email) delete payload.email;
-            const { data } = await axios.post(`${API}/leads`, payload);
-            setSuccess(data.message || "Thanks! We'll be in touch shortly.");
+            const { error: supabaseError } = await supabase.from("leads").insert([payload]);
+            if (supabaseError) throw supabaseError;
+            
+            setSuccess("Thanks! We'll be in touch shortly.");
             setForm({
                 name: "",
                 business_type: BUSINESS_TYPES[0],
@@ -55,9 +54,8 @@ export default function Contact() {
                 message: "",
             });
         } catch (err) {
-            const msg =
-                err?.response?.data?.detail ||
-                "Something went wrong. Please try again or WhatsApp us.";
+            console.error("Supabase insert error:", err);
+            const msg = err?.message || "Something went wrong. Please try again or WhatsApp us.";
             setError(typeof msg === "string" ? msg : "Submission failed.");
         } finally {
             setSubmitting(false);
@@ -106,7 +104,7 @@ export default function Contact() {
 
                     {/* WhatsApp CTA */}
                     <a
-                        href="https://wa.me/919999999999"
+                        href="https://wa.me/917989831473"
                         target="_blank"
                         rel="noreferrer"
                         data-testid="whatsapp-cta"
@@ -125,18 +123,18 @@ export default function Contact() {
 
                     <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-[#4A4A5A]">
                         <a
-                            href="tel:+919999999999"
+                            href="tel:+917989831473"
                             className="inline-flex items-center gap-2 hover:text-[#0A0A1A]"
                         >
                             <Phone size={14} className="text-[#6C5CE7]" /> +91
-                            99999 99999
+                            79898 31473
                         </a>
                         <a
-                            href="mailto:hello@autosolutions.in"
+                            href="mailto:autosolutions297@gmail.com"
                             className="inline-flex items-center gap-2 hover:text-[#0A0A1A]"
                         >
                             <Mail size={14} className="text-[#6C5CE7]" />{" "}
-                            hello@autosolutions.in
+                            autosolutions297@gmail.com
                         </a>
                     </div>
                 </div>
