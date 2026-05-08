@@ -10,7 +10,6 @@ import Services from "@/components/site/Services";
 import HowItWorks from "@/components/site/HowItWorks";
 import Industries from "@/components/site/Industries";
 import Stats from "@/components/site/Stats";
-import Pricing from "@/components/site/Pricing";
 import Testimonials from "@/components/site/Testimonials";
 import FAQ from "@/components/site/FAQ";
 import CTABanner from "@/components/site/CTABanner";
@@ -29,7 +28,6 @@ function Landing() {
                 <HowItWorks />
                 <Industries />
                 <Stats />
-                <Pricing />
                 <Testimonials />
                 <div id="faq">
                     <FAQ />

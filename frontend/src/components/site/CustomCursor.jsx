@@ -81,8 +81,8 @@ export default function CustomCursor() {
                     width: 8,
                     height: 8,
                     borderRadius: "50%",
-                    background: "#6C5CE7",
-                    boxShadow: "0 0 16px 4px rgba(108, 92, 231, 0.55)",
+                    background: "#F97316",
+                    boxShadow: "0 0 16px 4px rgba(249, 115, 22, 0.55)",
                     pointerEvents: "none",
                     zIndex: 9998,
                     mixBlendMode: "normal",
@@ -100,7 +100,7 @@ export default function CustomCursor() {
                     width: 36,
                     height: 36,
                     borderRadius: "50%",
-                    border: "1.5px solid rgba(108, 92, 231, 0.55)",
+                    border: "1.5px solid rgba(249, 115, 22, 0.55)",
                     pointerEvents: "none",
                     zIndex: 9997,
                     transition:
@@ -112,8 +112,8 @@ export default function CustomCursor() {
         .as-cursor-ring.as-cursor-active {
           width: 56px;
           height: 56px;
-          border-color: rgba(108, 92, 231, 0.85);
-          background: rgba(108, 92, 231, 0.08);
+          border-color: rgba(249, 115, 22, 0.85);
+          background: rgba(249, 115, 22, 0.08);
         }
       `}</style>
         </>

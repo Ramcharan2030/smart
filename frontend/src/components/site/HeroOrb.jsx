@@ -62,7 +62,7 @@ export default function HeroOrb() {
         const pointsMat = new THREE.PointsMaterial({
             size: 0.05,
             sizeAttenuation: true,
-            color: new THREE.Color("#6C5CE7"),
+            color: new THREE.Color("#F97316"),
             transparent: true,
             opacity: 0.95,
             depthWrite: false,
@@ -98,7 +98,7 @@ export default function HeroOrb() {
             new THREE.Float32BufferAttribute(linePositions, 3),
         );
         const linesMat = new THREE.LineBasicMaterial({
-            color: new THREE.Color("#6C5CE7"),
+            color: new THREE.Color("#F97316"),
             transparent: true,
             opacity: 0.2,
             depthWrite: false,
@@ -120,7 +120,7 @@ export default function HeroOrb() {
             new THREE.Mesh(
                 new THREE.SphereGeometry(0.7, 32, 32),
                 new THREE.MeshBasicMaterial({
-                    color: new THREE.Color("#6C5CE7"),
+                    color: new THREE.Color("#F97316"),
                     transparent: true,
                     opacity: 0.08,
                 }),
@@ -195,7 +195,7 @@ export default function HeroOrb() {
                 className="absolute inset-0 pointer-events-none"
                 style={{
                     background:
-                        "radial-gradient(closest-side, rgba(108,92,231,0.22), rgba(108,92,231,0.08) 50%, transparent 75%)",
+                        "radial-gradient(closest-side, rgba(249,115,22,0.22), rgba(249,115,22,0.08) 50%, transparent 75%)",
                     filter: "blur(8px)",
                 }}
             />

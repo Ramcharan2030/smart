@@ -53,12 +53,12 @@ export default function Testimonials() {
         >
             <div className="max-w-7xl mx-auto px-6 md:px-10">
                 <div className="max-w-3xl mb-12 md:mb-14">
-                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#6C5CE7] mb-4">
+                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#F97316] mb-4">
                         What our clients say
                     </p>
                     <h2 className="font-extrabold tracking-tighter text-[#0A0A1A] text-4xl sm:text-5xl leading-[1.04]">
                         Real businesses.{" "}
-                        <span className="text-[#6C5CE7]">Real results.</span>
+                        <span className="text-[#F97316]">Real results.</span>
                     </h2>
                 </div>
 
@@ -74,7 +74,7 @@ export default function Testimonials() {
                             data-testid="testimonial-card"
                         >
                             <Quote
-                                className="absolute -top-4 left-8 text-[#6C5CE7]/15"
+                                className="absolute -top-4 left-8 text-[#F97316]/15"
                                 size={80}
                             />
                             <div className="md:col-span-3 flex md:block items-center gap-5">
@@ -100,7 +100,7 @@ export default function Testimonials() {
                                                 <Star
                                                     key={i}
                                                     size={14}
-                                                    className="fill-[#6C5CE7] text-[#6C5CE7]"
+                                                    className="fill-[#F97316] text-[#F97316]"
                                                 />
                                             ),
                                         )}
@@ -125,7 +125,7 @@ export default function Testimonials() {
                                 data-testid={`testimonial-dot-${i}`}
                                 className={`h-2 rounded-full transition-all ${
                                     idx === i
-                                        ? "w-8 bg-[#6C5CE7]"
+                                        ? "w-8 bg-[#F97316]"
                                         : "w-2 bg-[#0A0A1A]/15 hover:bg-[#0A0A1A]/30"
                                 }`}
                             />
