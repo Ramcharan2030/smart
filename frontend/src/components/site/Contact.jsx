@@ -62,6 +62,31 @@ export default function Contact() {
         }
     };
 
+    const getWhatsAppUrl = () => {
+        const phone = "917989831473";
+        let message = "Hi AutoSolutions! I'm interested in your AI automation services.";
+        
+        if (form.name.trim() || form.business_type) {
+            message = `Hi AutoSolutions! My name is ${form.name.trim() || "[Name]"}${form.business_type ? ` and I run a ${form.business_type}` : ""}. I'm interested in your AI automation services.`;
+            if (form.message.trim()) {
+                message += `\n\nContext: ${form.message.trim()}`;
+            }
+        }
+        
+        return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    };
+
+    const getCalendlyUrl = () => {
+        // NOTE: User should replace this with their actual Calendly link
+        const baseUrl = "https://calendly.com/demo"; 
+        const params = new URLSearchParams();
+        if (form.name.trim()) params.append("name", form.name.trim());
+        if (form.email.trim()) params.append("email", form.email.trim());
+        
+        const queryString = params.toString();
+        return queryString ? `${baseUrl}?${queryString}` : baseUrl;
+    };
+
     return (
         <section
             id="contact"
@@ -83,7 +108,7 @@ export default function Contact() {
 
                     {/* Calendly placeholder */}
                     <a
-                        href="https://calendly.com/demo"
+                        href={getCalendlyUrl()}
                         target="_blank"
                         rel="noreferrer"
                         data-testid="calendly-cta"
@@ -104,7 +129,7 @@ export default function Contact() {
 
                     {/* WhatsApp CTA */}
                     <a
-                        href="https://wa.me/917989831473"
+                        href={getWhatsAppUrl()}
                         target="_blank"
                         rel="noreferrer"
                         data-testid="whatsapp-cta"

@@ -1,4 +1,5 @@
 import { Sparkles, Linkedin, Instagram, Twitter } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const SECTIONS = [
     {
@@ -13,9 +14,9 @@ const SECTIONS = [
     {
         title: "Company",
         links: [
-            { label: "About", href: "#" },
-            { label: "Privacy Policy", href: "#" },
-            { label: "Terms of Service", href: "#" },
+            { label: "About", href: "/#about" },
+            { label: "Privacy Policy", href: "/privacy", internal: true },
+            { label: "Terms of Service", href: "/terms", internal: true },
             { label: "Careers", href: "#" },
         ],
     },
@@ -91,12 +92,21 @@ export default function Footer() {
                             <ul className="space-y-3">
                                 {s.links.map((l) => (
                                     <li key={l.label}>
-                                        <a
-                                            href={l.href}
-                                            className="text-sm text-white/75 hover:text-white transition-colors"
-                                        >
-                                            {l.label}
-                                        </a>
+                                        {l.internal ? (
+                                            <Link
+                                                to={l.href}
+                                                className="text-sm text-white/75 hover:text-white transition-colors"
+                                            >
+                                                {l.label}
+                                            </Link>
+                                        ) : (
+                                            <a
+                                                href={l.href}
+                                                className="text-sm text-white/75 hover:text-white transition-colors"
+                                            >
+                                                {l.label}
+                                            </a>
+                                        )}
                                     </li>
                                 ))}
                             </ul>

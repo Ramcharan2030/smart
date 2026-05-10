@@ -14,6 +14,10 @@ import FAQ from "@/components/site/FAQ";
 import CTABanner from "@/components/site/CTABanner";
 import Contact from "@/components/site/Contact";
 import Footer from "@/components/site/Footer";
+import WhatsAppFloat from "@/components/site/WhatsAppFloat";
+
+import Privacy from "@/pages/Privacy";
+import Terms from "@/pages/Terms";
 
 function Landing() {
     return (
@@ -34,6 +38,7 @@ function Landing() {
                 <Contact />
             </main>
             <Footer />
+            <WhatsAppFloat />
         </SmoothScroll>
     );
 }
@@ -44,6 +49,8 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Landing />} />
+                    <Route path="/privacy" element={<Privacy />} />
+                    <Route path="/terms" element={<Terms />} />
                 </Routes>
             </BrowserRouter>
         </div>

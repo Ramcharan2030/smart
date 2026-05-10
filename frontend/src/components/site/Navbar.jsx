@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Menu, X, Sparkles } from "lucide-react";
 import MagneticButton from "./MagneticButton";
 
@@ -11,6 +12,8 @@ const NAV_LINKS = [
 ];
 
 export default function Navbar() {
+    const navigate = useNavigate();
+    const location = useLocation();
     const [scrolled, setScrolled] = useState(false);
     const [open, setOpen] = useState(false);
     const ref = useRef(null);
@@ -23,6 +26,10 @@ export default function Navbar() {
     }, []);
 
     const scrollTo = (href) => {
+        if (location.pathname !== "/") {
+            navigate("/" + href);
+            return;
+        }
         const target = document.querySelector(href);
         if (!target) return;
         if (window.__lenis) {
