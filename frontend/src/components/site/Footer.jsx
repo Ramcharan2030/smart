@@ -1,4 +1,4 @@
-import { Sparkles, Linkedin, Instagram, Twitter, Youtube } from "lucide-react";
+import { Sparkles, Linkedin, Instagram, Twitter } from "lucide-react";
 
 const SECTIONS = [
     {
@@ -65,10 +65,9 @@ export default function Footer() {
                     </p>
                     <div className="mt-6 flex items-center gap-3">
                         {[
-                            { Icon: Linkedin, href: "#", label: "LinkedIn" },
-                            { Icon: Instagram, href: "#", label: "Instagram" },
-                            { Icon: Twitter, href: "#", label: "Twitter / X" },
-                            { Icon: Youtube, href: "#", label: "YouTube" },
+                            { Icon: Linkedin, href: "https://www.linkedin.com/in/auto-solutions-0747a7409/", label: "LinkedIn" },
+                            { Icon: Instagram, href: "https://www.instagram.com/autosolutions.in?igsh=MXd1eGJlaXAzamprbQ==", label: "Instagram" },
+                            { Icon: Twitter, href: "https://x.com/AutoSolutionsin", label: "Twitter / X" },
                         ].map(({ Icon, href, label }) => (
                             <a
                                 key={label}
