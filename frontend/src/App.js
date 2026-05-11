@@ -15,6 +15,8 @@ import CTABanner from "@/components/site/CTABanner";
 import Contact from "@/components/site/Contact";
 import Footer from "@/components/site/Footer";
 import WhatsAppFloat from "@/components/site/WhatsAppFloat";
+import DemoVideo from "@/components/site/DemoVideo";
+
 
 import Privacy from "@/pages/Privacy";
 import Terms from "@/pages/Terms";
@@ -26,6 +28,7 @@ function Landing() {
             <main>
                 <Hero />
                 <SocialProofTicker />
+                <DemoVideo />
                 <Services />
                 <HowItWorks />
                 <Industries />

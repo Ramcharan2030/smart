@@ -119,7 +119,7 @@ export default function Hero() {
                             </span>
                         </MagneticButton>
                         <MagneticButton
-                            onClick={() => scrollTo("#services")}
+                            onClick={() => scrollTo("#demo")}
                             data-testid="hero-watch-demo-btn"
                             className="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-white text-[#0A0A1A] border border-black/10 font-semibold hover:bg-black/[0.03] transition-colors"
                         >
