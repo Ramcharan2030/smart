@@ -57,8 +57,8 @@ export default function Hero() {
                         data-testid="hero-trust-badge"
                     >
                         <span className="relative flex h-2 w-2">
-                            <span className="absolute inline-flex h-full w-full rounded-full bg-[#6C5CE7] opacity-75 animate-ping" />
-                            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#6C5CE7]" />
+                            <span className="absolute inline-flex h-full w-full rounded-full bg-[var(--as-violet)] opacity-75 animate-ping" />
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--as-violet)]" />
                         </span>
                         Trusted by 500+ Businesses Across India
                         <span className="ml-1">🇮🇳</span>
@@ -124,7 +124,7 @@ export default function Hero() {
                             className="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-as-bg text-as-ink border border-as-border font-semibold hover:bg-as-border transition-colors"
                         >
                             <span className="inline-flex items-center gap-2">
-                                <Play size={16} className="text-[#6C5CE7]" />
+                                <Play size={16} className="text-[var(--as-violet)]" />
                                 Watch Demo
                             </span>
                         </MagneticButton>
@@ -147,7 +147,7 @@ export default function Hero() {
                                 key={c}
                                 className="inline-flex items-center gap-2"
                             >
-                                <span className="h-1.5 w-1.5 rounded-full bg-[#6C5CE7]" />
+                                <span className="h-1.5 w-1.5 rounded-full bg-[var(--as-violet)]" />
                                 {c}
                             </span>
                         ))}
@@ -202,7 +202,7 @@ function FloatingPill({ label, icon, style, delay = 1 }) {
             className="absolute as-glass px-3 py-1.5 rounded-full text-[12px] font-semibold text-as-ink flex items-center gap-1.5 shadow-[0_8px_24px_rgba(10,10,26,0.06)]"
             style={style}
         >
-            <span className="text-[#6C5CE7]">{icon}</span>
+            <span className="text-[var(--as-violet)]">{icon}</span>
             {label}
         </motion.div>
     );

@@ -90,7 +90,7 @@ export default function Navbar() {
                             scrollTo("#contact");
                         }}
                         data-testid="nav-book-demo-btn"
-                        className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-[#6C5CE7] text-white text-sm font-semibold shadow-[0_6px_22px_rgba(108,92,231,0.45)] hover:bg-[#5A4BD1] transition-colors"
+                        className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-[var(--as-violet)] text-white text-sm font-semibold shadow-[0_6px_22px_rgba(108,92,231,0.45)] hover:bg-[var(--as-violet-hover)] transition-colors"
                     >
                         Book a Free Demo
                     </MagneticButton>

@@ -53,7 +53,7 @@ export default function TextScramble({
                         char = CHARS[Math.floor(Math.random() * CHARS.length)];
                         queue[i].char = char;
                     }
-                    out += `<span style="color:#6C5CE7;opacity:.85">${char}</span>`;
+                    out += `<span style="color:var(--as-violet);opacity:.85">${char}</span>`;
                 } else {
                     out += from;
                 }

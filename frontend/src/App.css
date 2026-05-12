@@ -1,7 +1,7 @@
 /* Component-level styles for AutoSolutions.in */
 .App {
     min-height: 100vh;
-    background: #ffffff;
-    color: #0a0a1a;
+    background: var(--as-bg);
+    color: var(--as-ink);
     font-family: "Plus Jakarta Sans", sans-serif;
 }

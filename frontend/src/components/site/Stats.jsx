@@ -57,9 +57,9 @@ function Counter({ stat, active, delay = 0 }) {
     }, [active, stat.value, delay]);
 
     return (
-        <span className="font-extrabold tracking-tighter text-[#0A0A1A] text-5xl sm:text-6xl">
+        <span className="font-extrabold tracking-tighter text-[var(--as-ink)] text-5xl sm:text-6xl">
             {stat.format(val)}
-            <span className="text-[#6C5CE7]">{stat.suffix}</span>
+            <span className="text-[var(--as-violet)]">{stat.suffix}</span>
         </span>
     );
 }
@@ -94,19 +94,19 @@ export default function Stats() {
         >
             <div className="max-w-7xl mx-auto px-6 md:px-10">
                 <div className="max-w-3xl mb-14">
-                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#6C5CE7] mb-4">
+                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[var(--as-violet)] mb-4">
                         Numbers don't lie
                     </p>
-                    <h2 className="font-extrabold tracking-tighter text-[#0A0A1A] text-4xl sm:text-5xl leading-[1.04]">
+                    <h2 className="font-extrabold tracking-tighter text-[var(--as-ink)] text-4xl sm:text-5xl leading-[1.04]">
                         The kind of growth you can{" "}
-                        <span className="text-[#6C5CE7]">measure.</span>
+                        <span className="text-[var(--as-violet)]">measure.</span>
                     </h2>
                 </div>
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                     {STATS.map((s, i) => (
                         <div
                             key={s.label}
-                            className="bg-white rounded-2xl p-7 md:p-9 border border-black/5"
+                            className="bg-as-bg rounded-2xl p-7 md:p-9 border border-as-border"
                             data-testid={`stat-${i}`}
                         >
                             <div className="flex items-baseline">
@@ -116,7 +116,7 @@ export default function Stats() {
                                     delay={i * 120}
                                 />
                             </div>
-                            <p className="mt-2 text-sm text-[#4A4A5A] font-medium">
+                            <p className="mt-2 text-sm text-[var(--as-ink-soft)] font-medium">
                                 {s.label}
                             </p>
                         </div>

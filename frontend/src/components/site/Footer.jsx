@@ -35,7 +35,7 @@ export default function Footer() {
     return (
         <footer
             data-testid="site-footer"
-            className="relative bg-[#0A0A1A] text-white pt-20 pb-10"
+            className="relative bg-[var(--as-ink)] text-white pt-20 pb-10"
         >
             {/* subtle violet glow */}
             <div
@@ -56,7 +56,7 @@ export default function Footer() {
                         <img 
                             src="/logo.jpg" 
                             alt="AutoSolutions.in Logo" 
-                            className="h-16 w-auto object-contain bg-white rounded-md p-1" 
+                            className="h-16 w-auto object-contain bg-as-bg rounded-md p-1" 
                         />
                     </div>
                     <p className="mt-4 text-white/70 max-w-md leading-relaxed">
@@ -75,7 +75,7 @@ export default function Footer() {
                                 href={href}
                                 aria-label={label}
                                 data-testid={`social-${label.toLowerCase().split(" ")[0]}`}
-                                className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-white/8 hover:bg-[#6C5CE7] border border-white/10 transition-colors"
+                                className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-as-bg/8 hover:bg-[var(--as-violet)] border border-white/10 transition-colors"
                             >
                                 <Icon size={16} />
                             </a>
@@ -86,7 +86,7 @@ export default function Footer() {
                 <div className="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8">
                     {SECTIONS.map((s) => (
                         <div key={s.title}>
-                            <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#6C5CE7] mb-4">
+                            <p className="text-xs tracking-[0.2em] uppercase font-bold text-[var(--as-violet)] mb-4">
                                 {s.title}
                             </p>
                             <ul className="space-y-3">

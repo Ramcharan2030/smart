@@ -81,7 +81,7 @@ export default function CustomCursor() {
                     width: 8,
                     height: 8,
                     borderRadius: "50%",
-                    background: "#6C5CE7",
+                    background: "var(--as-violet)",
                     boxShadow: "0 0 16px 4px rgba(108, 92, 231, 0.55)",
                     pointerEvents: "none",
                     zIndex: 9998,

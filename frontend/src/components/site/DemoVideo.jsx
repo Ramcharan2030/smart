@@ -20,15 +20,15 @@ export default function DemoVideo() {
         <section
             id="demo"
             data-testid="demo-video-section"
-            className="relative py-24 md:py-32 bg-white overflow-hidden"
+            className="relative py-24 md:py-32 bg-as-bg overflow-hidden"
         >
             {/* Background decorative elements */}
             <div
                 className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full opacity-50 pointer-events-none"
                 aria-hidden
             >
-                <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-[#6C5CE7]/5 blur-[120px] rounded-full" />
-                <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-[#6C5CE7]/5 blur-[120px] rounded-full" />
+                <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-[var(--as-violet)]/5 blur-[120px] rounded-full" />
+                <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-[var(--as-violet)]/5 blur-[120px] rounded-full" />
             </div>
 
             <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
@@ -38,7 +38,7 @@ export default function DemoVideo() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
-                        className="text-xs tracking-[0.2em] uppercase font-bold text-[#6C5CE7] mb-4"
+                        className="text-xs tracking-[0.2em] uppercase font-bold text-[var(--as-violet)] mb-4"
                     >
                         See it in action
                     </motion.p>
@@ -47,16 +47,16 @@ export default function DemoVideo() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.1 }}
-                        className="font-extrabold tracking-tighter text-[#0A0A1A] text-4xl sm:text-5xl leading-[1.04] mb-6"
+                        className="font-extrabold tracking-tighter text-[var(--as-ink)] text-4xl sm:text-5xl leading-[1.04] mb-6"
                     >
-                        Experience the power of <span className="text-[#6C5CE7]">AutoSolutions</span>
+                        Experience the power of <span className="text-[var(--as-violet)]">AutoSolutions</span>
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 15 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.2 }}
-                        className="text-[#4A4A5A] text-lg leading-relaxed"
+                        className="text-[var(--as-ink-soft)] text-lg leading-relaxed"
                     >
                         Watch how our AI agents handle calls, book appointments, and manage leads with human-like intelligence.
                     </motion.p>
@@ -92,7 +92,7 @@ export default function DemoVideo() {
                                 <motion.div
                                     whileHover={{ scale: 1.1 }}
                                     whileTap={{ scale: 0.9 }}
-                                    className="w-20 h-20 rounded-full bg-[#6C5CE7] text-white flex items-center justify-center shadow-[0_15px_40px_rgba(108,92,231,0.5)] group-hover:bg-[#5A4BD1] transition-colors"
+                                    className="w-20 h-20 rounded-full bg-[var(--as-violet)] text-white flex items-center justify-center shadow-[0_15px_40px_rgba(108,92,231,0.5)] group-hover:bg-[var(--as-violet-hover)] transition-colors"
                                 >
                                     <Play size={32} fill="currentColor" className="ml-1" />
                                 </motion.div>

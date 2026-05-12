@@ -135,7 +135,7 @@ export default function Contact() {
                         data-testid="whatsapp-cta"
                         className="mt-4 group flex items-center gap-4 p-5 rounded-2xl bg-[#10B981] text-white hover:bg-[#0D9668] transition-colors shadow-[0_10px_30px_rgba(16,185,129,0.35)]"
                     >
-                        <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/15">
+                        <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-as-bg/15">
                             <MessageCircle size={20} />
                         </span>
                         <div className="flex-1">
@@ -151,14 +151,14 @@ export default function Contact() {
                             href="tel:+917989831473"
                             className="inline-flex items-center gap-2 hover:text-as-ink"
                         >
-                            <Phone size={14} className="text-[#6C5CE7]" /> +91
+                            <Phone size={14} className="text-[var(--as-violet)]" /> +91
                             79898 31473
                         </a>
                         <a
                             href="mailto:autosolutions297@gmail.com"
                             className="inline-flex items-center gap-2 hover:text-as-ink"
                         >
-                            <Mail size={14} className="text-[#6C5CE7]" />{" "}
+                            <Mail size={14} className="text-[var(--as-violet)]" />{" "}
                             autosolutions297@gmail.com
                         </a>
                     </div>
@@ -191,7 +191,7 @@ export default function Contact() {
                                 required
                             />
                             <div className="md:col-span-1">
-                                <label className="block text-xs tracking-[0.18em] uppercase font-bold text-[#6C5CE7] mb-2">
+                                <label className="block text-xs tracking-[0.18em] uppercase font-bold text-[var(--as-violet)] mb-2">
                                     Business Type
                                 </label>
                                 <select
@@ -218,7 +218,7 @@ export default function Contact() {
                                 testId="contact-input-email"
                             />
                             <div className="md:col-span-2">
-                                <label className="block text-xs tracking-[0.18em] uppercase font-bold text-[#6C5CE7] mb-2">
+                                <label className="block text-xs tracking-[0.18em] uppercase font-bold text-[var(--as-violet)] mb-2">
                                     What do you want to automate?
                                 </label>
                                 <textarea

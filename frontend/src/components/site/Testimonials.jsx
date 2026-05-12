@@ -53,12 +53,12 @@ export default function Testimonials() {
         >
             <div className="max-w-7xl mx-auto px-6 md:px-10">
                 <div className="max-w-3xl mb-12 md:mb-14">
-                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#6C5CE7] mb-4">
+                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[var(--as-violet)] mb-4">
                         What our clients say
                     </p>
-                    <h2 className="font-extrabold tracking-tighter text-[#0A0A1A] text-4xl sm:text-5xl leading-[1.04]">
+                    <h2 className="font-extrabold tracking-tighter text-[var(--as-ink)] text-4xl sm:text-5xl leading-[1.04]">
                         Real businesses.{" "}
-                        <span className="text-[#6C5CE7]">Real results.</span>
+                        <span className="text-[var(--as-violet)]">Real results.</span>
                     </h2>
                 </div>
 
@@ -74,7 +74,7 @@ export default function Testimonials() {
                             data-testid="testimonial-card"
                         >
                             <Quote
-                                className="absolute -top-4 left-8 text-[#6C5CE7]/15"
+                                className="absolute -top-4 left-8 text-[var(--as-violet)]/15"
                                 size={80}
                             />
                             <div className="md:col-span-3 flex md:block items-center gap-5">
@@ -85,13 +85,13 @@ export default function Testimonials() {
                                     className="w-20 h-20 md:w-24 md:h-24 rounded-2xl object-cover border-2 border-white shadow-[0_8px_28px_rgba(10,10,26,0.08)]"
                                 />
                                 <div className="md:mt-5">
-                                    <p className="font-bold text-[#0A0A1A]">
+                                    <p className="font-bold text-[var(--as-ink)]">
                                         {t.name}
                                     </p>
-                                    <p className="text-sm text-[#4A4A5A]">
+                                    <p className="text-sm text-[var(--as-ink-soft)]">
                                         {t.role}
                                     </p>
-                                    <p className="text-xs text-[#8A8A9A] mt-0.5">
+                                    <p className="text-xs text-[var(--as-ink-muted)] mt-0.5">
                                         {t.company}
                                     </p>
                                     <div className="flex gap-1 mt-2">
@@ -100,7 +100,7 @@ export default function Testimonials() {
                                                 <Star
                                                     key={i}
                                                     size={14}
-                                                    className="fill-[#6C5CE7] text-[#6C5CE7]"
+                                                    className="fill-[var(--as-violet)] text-[var(--as-violet)]"
                                                 />
                                             ),
                                         )}
@@ -108,7 +108,7 @@ export default function Testimonials() {
                                 </div>
                             </div>
                             <div className="md:col-span-9">
-                                <p className="text-xl md:text-2xl leading-relaxed font-medium text-[#0A0A1A] tracking-tight">
+                                <p className="text-xl md:text-2xl leading-relaxed font-medium text-[var(--as-ink)] tracking-tight">
                                     “{t.quote}”
                                 </p>
                             </div>
@@ -125,8 +125,8 @@ export default function Testimonials() {
                                 data-testid={`testimonial-dot-${i}`}
                                 className={`h-2 rounded-full transition-all ${
                                     idx === i
-                                        ? "w-8 bg-[#6C5CE7]"
-                                        : "w-2 bg-[#0A0A1A]/15 hover:bg-[#0A0A1A]/30"
+                                        ? "w-8 bg-[var(--as-violet)]"
+                                        : "w-2 bg-[var(--as-ink)]/15 hover:bg-[var(--as-ink)]/30"
                                 }`}
                             />
                         ))}
