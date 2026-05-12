@@ -90,7 +90,7 @@ export default function Stats() {
         <section
             ref={ref}
             data-testid="stats-section"
-            className="relative py-24 md:py-32 bg-[#F7F7F8]"
+            className="relative py-24 md:py-32 bg-[var(--as-bg-soft)]"
         >
             <div className="max-w-7xl mx-auto px-6 md:px-10">
                 <div className="max-w-3xl mb-14">

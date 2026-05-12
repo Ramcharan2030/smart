@@ -126,7 +126,7 @@ export default function Testimonials() {
                                 className={`h-2 rounded-full transition-all ${
                                     idx === i
                                         ? "w-8 bg-[var(--as-violet)]"
-                                        : "w-2 bg-[var(--as-ink)]/15 hover:bg-[var(--as-ink)]/30"
+                                        : "w-2 bg-as-bg/15 hover:bg-as-bg/30"
                                 }`}
                             />
                         ))}

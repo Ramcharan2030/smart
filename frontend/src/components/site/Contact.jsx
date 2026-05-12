@@ -114,7 +114,7 @@ export default function Contact() {
                         data-testid="calendly-cta"
                         className="mt-8 group flex items-center gap-4 p-5 rounded-2xl bg-as-bg border border-as-border hover:border-as-violet/30 hover:shadow-[0_18px_50px_rgba(108,92,231,0.12)] transition-all"
                     >
-                        <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-as-violet text-white shadow-[0_8px_24px_rgba(108,92,231,0.4)]">
+                        <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-as-violet text-as-ink shadow-[0_8px_24px_rgba(108,92,231,0.4)]">
                             <Calendar size={20} />
                         </span>
                         <div className="flex-1">
@@ -133,14 +133,14 @@ export default function Contact() {
                         target="_blank"
                         rel="noreferrer"
                         data-testid="whatsapp-cta"
-                        className="mt-4 group flex items-center gap-4 p-5 rounded-2xl bg-[#10B981] text-white hover:bg-[#0D9668] transition-colors shadow-[0_10px_30px_rgba(16,185,129,0.35)]"
+                        className="mt-4 group flex items-center gap-4 p-5 rounded-2xl bg-[#10B981] text-as-ink hover:bg-[#0D9668] transition-colors shadow-[0_10px_30px_rgba(16,185,129,0.35)]"
                     >
                         <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-as-bg/15">
                             <MessageCircle size={20} />
                         </span>
                         <div className="flex-1">
                             <p className="font-bold">Chat with us on WhatsApp</p>
-                            <p className="text-sm text-white/80">
+                            <p className="text-sm text-as-ink/80">
                                 Average reply time: under 4 minutes
                             </p>
                         </div>
@@ -263,7 +263,7 @@ export default function Contact() {
                                 type="submit"
                                 onClick={() => {}}
                                 data-testid="contact-form-submit"
-                                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-as-violet text-white font-semibold shadow-[0_10px_28px_rgba(108,92,231,0.45)] hover:bg-as-violet-hover transition-colors disabled:opacity-60"
+                                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-as-violet text-as-ink font-semibold shadow-[0_10px_28px_rgba(108,92,231,0.45)] hover:bg-as-violet-hover transition-colors disabled:opacity-60"
                                 disabled={submitting}
                             >
                                 <span className="inline-flex items-center gap-2">

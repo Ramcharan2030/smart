@@ -71,7 +71,7 @@ export default function HowItWorks() {
                             >
                                 {s.n}
                             </span>
-                            <div className="relative inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-as-violet text-white shadow-[0_10px_30px_rgba(108,92,231,0.4)] mb-6">
+                            <div className="relative inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-as-violet text-as-ink shadow-[0_10px_30px_rgba(108,92,231,0.4)] mb-6">
                                 <s.icon size={22} strokeWidth={2} />
                             </div>
                             <h3 className="font-bold text-xl tracking-tight text-as-ink mb-3">

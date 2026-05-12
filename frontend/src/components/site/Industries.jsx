@@ -102,7 +102,7 @@ export default function Industries() {
                                     className="relative h-full rounded-2xl p-7 bg-as-bg border border-as-border hover:border-[var(--as-violet)]/25 transition-colors"
                                     data-testid={`industry-card-${i}`}
                                 >
-                                    <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-[#F7F7F8] text-[var(--as-violet)] border border-[var(--as-violet)]/15 mb-5">
+                                    <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-[var(--as-bg-soft)] text-[var(--as-violet)] border border-[var(--as-violet)]/15 mb-5">
                                         <it.icon size={20} strokeWidth={2} />
                                     </div>
                                     <h3 className="font-bold text-lg tracking-tight text-[var(--as-ink)] mb-2">

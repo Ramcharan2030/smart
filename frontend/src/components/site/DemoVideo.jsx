@@ -68,7 +68,7 @@ export default function DemoVideo() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                    className="relative max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-[0_32px_80px_rgba(108,92,231,0.15)] border border-white/40 as-glass"
+                    className="relative max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-[0_32px_80px_rgba(108,92,231,0.15)] border border-as-border as-glass"
                 >
                     <div className="aspect-video relative bg-black/5">
                         <video
@@ -92,7 +92,7 @@ export default function DemoVideo() {
                                 <motion.div
                                     whileHover={{ scale: 1.1 }}
                                     whileTap={{ scale: 0.9 }}
-                                    className="w-20 h-20 rounded-full bg-[var(--as-violet)] text-white flex items-center justify-center shadow-[0_15px_40px_rgba(108,92,231,0.5)] group-hover:bg-[var(--as-violet-hover)] transition-colors"
+                                    className="w-20 h-20 rounded-full bg-[var(--as-violet)] text-as-ink flex items-center justify-center shadow-[0_15px_40px_rgba(108,92,231,0.5)] group-hover:bg-[var(--as-violet-hover)] transition-colors"
                                 >
                                     <Play size={32} fill="currentColor" className="ml-1" />
                                 </motion.div>

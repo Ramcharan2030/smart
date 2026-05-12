@@ -72,7 +72,7 @@ export default function CTABanner() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-80px" }}
                         transition={{ duration: 0.7, delay: 0.1 }}
-                        className="mt-5 text-white/85 text-base sm:text-lg max-w-2xl mx-auto"
+                        className="mt-5 text-white/90 text-base sm:text-lg max-w-2xl mx-auto"
                     >
                         Join 500+ businesses already using AutoSolutions.in to
                         capture more leads, reduce no-shows, and grow on
@@ -88,7 +88,7 @@ export default function CTABanner() {
                         <MagneticButton
                             onClick={scrollToContact}
                             data-testid="cta-banner-book-btn"
-                            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-as-bg text-[var(--as-ink)] font-semibold shadow-[0_18px_50px_rgba(0,0,0,0.18)] hover:bg-as-bg/95 transition-colors"
+                            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white text-[var(--as-ink)] font-semibold shadow-[0_18px_50px_rgba(0,0,0,0.18)] hover:bg-white/95 transition-colors"
                         >
                             <span className="inline-flex items-center gap-2">
                                 Book Your Free Demo Call

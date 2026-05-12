@@ -35,7 +35,7 @@ export default function Footer() {
     return (
         <footer
             data-testid="site-footer"
-            className="relative bg-[var(--as-ink)] text-white pt-20 pb-10"
+            className="relative bg-as-bg text-as-ink pt-20 pb-10"
         >
             {/* subtle violet glow */}
             <div
@@ -59,7 +59,7 @@ export default function Footer() {
                             className="h-16 w-auto object-contain bg-as-bg rounded-md p-1" 
                         />
                     </div>
-                    <p className="mt-4 text-white/70 max-w-md leading-relaxed">
+                    <p className="mt-4 text-as-ink/70 max-w-md leading-relaxed">
                         Automating India's businesses, one bot at a time. Built
                         in India for clinics, hospitals, cafes, retail, and
                         more.
@@ -75,7 +75,7 @@ export default function Footer() {
                                 href={href}
                                 aria-label={label}
                                 data-testid={`social-${label.toLowerCase().split(" ")[0]}`}
-                                className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-as-bg/8 hover:bg-[var(--as-violet)] border border-white/10 transition-colors"
+                                className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-as-bg/8 hover:bg-[var(--as-violet)] border border-as-border transition-colors"
                             >
                                 <Icon size={16} />
                             </a>
@@ -95,14 +95,14 @@ export default function Footer() {
                                         {l.internal ? (
                                             <Link
                                                 to={l.href}
-                                                className="text-sm text-white/75 hover:text-white transition-colors"
+                                                className="text-sm text-as-ink/75 hover:text-as-ink transition-colors"
                                             >
                                                 {l.label}
                                             </Link>
                                         ) : (
                                             <a
                                                 href={l.href}
-                                                className="text-sm text-white/75 hover:text-white transition-colors"
+                                                className="text-sm text-as-ink/75 hover:text-as-ink transition-colors"
                                             >
                                                 {l.label}
                                             </a>
@@ -115,11 +115,11 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="relative max-w-7xl mx-auto px-6 md:px-10 mt-14 pt-8 border-t border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-                <p className="text-xs text-white/50">
+            <div className="relative max-w-7xl mx-auto px-6 md:px-10 mt-14 pt-8 border-t border-as-border flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <p className="text-xs text-as-ink/50">
                     © 2025 AutoSolutions.in — All Rights Reserved.
                 </p>
-                <p className="text-xs text-white/50">
+                <p className="text-xs text-as-ink/50">
                     Built with ♥ in India · DPDP & GDPR aware
                 </p>
             </div>

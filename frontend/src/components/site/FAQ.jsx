@@ -36,7 +36,7 @@ export default function FAQ() {
     return (
         <section
             data-testid="faq-section"
-            className="relative py-24 md:py-32 bg-[#F7F7F8]"
+            className="relative py-24 md:py-32 bg-[var(--as-bg-soft)]"
         >
             <div className="max-w-4xl mx-auto px-6 md:px-10">
                 <div className="text-center mb-12 md:mb-16">

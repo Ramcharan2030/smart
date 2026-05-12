@@ -12,7 +12,7 @@ const Privacy = () => {
     return (
         <SmoothScroll>
             <Navbar />
-            <div className="relative bg-[#0A0A1A] text-white pt-32 pb-20 min-h-screen">
+            <div className="relative bg-as-bg text-as-ink pt-32 pb-20 min-h-screen">
                 {/* subtle violet glow */}
                 <div
                     className="as-blob fixed"
@@ -28,23 +28,23 @@ const Privacy = () => {
                 />
 
                 <div className="relative z-10 max-w-4xl mx-auto px-6 md:px-10">
-                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#6C5CE7] mb-4">
+                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[var(--as-violet)] mb-4">
                         Legal
                     </p>
                     <h1 className="text-4xl md:text-5xl font-extrabold tracking-tighter mb-10 leading-[1.1]">
                         Privacy Policy
                     </h1>
 
-                    <div className="space-y-10 text-white/70 leading-relaxed">
+                    <div className="space-y-10 text-as-ink/70 leading-relaxed">
                         <section>
-                            <h2 className="text-xl font-bold text-white mb-4">1. Introduction</h2>
+                            <h2 className="text-xl font-bold text-as-ink mb-4">1. Introduction</h2>
                             <p>
                                 Welcome to AutoSolutions.in. We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website and use our services.
                             </p>
                         </section>
 
                         <section>
-                            <h2 className="text-xl font-bold text-white mb-4">2. Information We Collect</h2>
+                            <h2 className="text-xl font-bold text-as-ink mb-4">2. Information We Collect</h2>
                             <p>
                                 We collect personal information that you voluntarily provide to us when you express an interest in obtaining information about us or our products and services, such as:
                             </p>
@@ -56,7 +56,7 @@ const Privacy = () => {
                         </section>
 
                         <section>
-                            <h2 className="text-xl font-bold text-white mb-4">3. How We Use Your Information</h2>
+                            <h2 className="text-xl font-bold text-as-ink mb-4">3. How We Use Your Information</h2>
                             <p>
                                 We use the information we collect for various purposes, including:
                             </p>
@@ -69,20 +69,20 @@ const Privacy = () => {
                         </section>
 
                         <section>
-                            <h2 className="text-xl font-bold text-white mb-4">4. Data Security</h2>
+                            <h2 className="text-xl font-bold text-as-ink mb-4">4. Data Security</h2>
                             <p>
                                 We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable.
                             </p>
                         </section>
 
                         <section>
-                            <h2 className="text-xl font-bold text-white mb-4">5. Contact Us</h2>
+                            <h2 className="text-xl font-bold text-as-ink mb-4">5. Contact Us</h2>
                             <p>
-                                If you have questions or comments about this policy, you may email us at <a href="mailto:autosolutions297@gmail.com" className="text-[#6C5CE7] hover:underline">autosolutions297@gmail.com</a>.
+                                If you have questions or comments about this policy, you may email us at <a href="mailto:autosolutions297@gmail.com" className="text-[var(--as-violet)] hover:underline">autosolutions297@gmail.com</a>.
                             </p>
                         </section>
 
-                        <div className="pt-10 border-t border-white/10 text-sm italic">
+                        <div className="pt-10 border-t border-as-border text-sm italic">
                             Last updated: May 10, 2026
                         </div>
                     </div>

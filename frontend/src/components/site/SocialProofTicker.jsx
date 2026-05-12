@@ -33,7 +33,7 @@ export default function SocialProofTicker() {
     return (
         <section
             data-testid="social-proof-ticker"
-            className="relative py-12 md:py-16 border-y border-as-border bg-[#F7F7F8]/60"
+            className="relative py-12 md:py-16 border-y border-as-border bg-[var(--as-bg-soft)]/60"
         >
             <div className="max-w-7xl mx-auto px-6 md:px-10 mb-6 flex items-end justify-between flex-wrap gap-3">
                 <p className="text-xs tracking-[0.2em] uppercase font-bold text-[var(--as-violet)]">
@@ -47,11 +47,11 @@ export default function SocialProofTicker() {
                 {/* edge fades */}
                 <div
                     aria-hidden
-                    className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white via-white/80 to-transparent z-10"
+                    className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-as-bg via-as-bg/80 to-transparent z-10"
                 />
                 <div
                     aria-hidden
-                    className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white via-white/80 to-transparent z-10"
+                    className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-as-bg via-as-bg/80 to-transparent z-10"
                 />
                 <div className="overflow-hidden">
                     <div className="flex gap-4 w-max as-marquee">

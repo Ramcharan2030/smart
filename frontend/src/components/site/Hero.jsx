@@ -111,7 +111,7 @@ export default function Hero() {
                         <MagneticButton
                             onClick={() => scrollTo("#contact")}
                             data-testid="hero-get-started-btn"
-                            className="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-as-violet text-white font-semibold shadow-[0_8px_28px_rgba(108,92,231,0.45)] hover:bg-as-violet-hover transition-colors"
+                            className="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-as-violet text-as-ink font-semibold shadow-[0_8px_28px_rgba(108,92,231,0.45)] hover:bg-as-violet-hover transition-colors"
                         >
                             <span className="inline-flex items-center gap-2">
                                 Get Started Free

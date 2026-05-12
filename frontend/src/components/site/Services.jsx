@@ -93,7 +93,7 @@ export default function Services() {
                             data-testid={`service-card-${i}`}
                         >
                             {/* Icon block */}
-                            <div className="relative mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-as-violet text-white">
+                            <div className="relative mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-as-violet text-as-ink">
                                 <s.icon size={20} strokeWidth={2} />
                                 <span className="absolute -inset-1 rounded-xl bg-as-violet opacity-20 blur-md -z-10" />
                             </div>

@@ -67,13 +67,13 @@ export default function WhatsAppFloat() {
                             href={whatsappUrl}
                             target="_blank"
                             rel="noreferrer"
-                            className="group relative flex items-center justify-center w-14 h-14 rounded-full bg-[#10B981] text-white shadow-[0_10px_30px_rgba(16,185,129,0.4)] hover:shadow-[0_15px_40px_rgba(16,185,129,0.5)] transition-all duration-300 hover:scale-110 active:scale-95"
+                            className="group relative flex items-center justify-center w-14 h-14 rounded-full bg-[#10B981] text-as-ink shadow-[0_10px_30px_rgba(16,185,129,0.4)] hover:shadow-[0_15px_40px_rgba(16,185,129,0.5)] transition-all duration-300 hover:scale-110 active:scale-95"
                         >
                             <span className="absolute inset-0 rounded-full bg-[#10B981] animate-ping opacity-20" />
                             <MessageCircle size={28} className="relative z-10" />
                             
                             {/* Hover label */}
-                            <span className="absolute right-full mr-4 px-3 py-1.5 rounded-lg bg-[var(--as-ink)] text-white text-[12px] font-semibold opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all pointer-events-none whitespace-nowrap">
+                            <span className="absolute right-full mr-4 px-3 py-1.5 rounded-lg bg-as-bg text-as-ink text-[12px] font-semibold opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all pointer-events-none whitespace-nowrap">
                                 Chat with us
                             </span>
                         </a>
