@@ -95,13 +95,13 @@ export default function Contact() {
         >
             <div className="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 lg:grid-cols-12 gap-10">
                 <div className="lg:col-span-5">
-                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#6C5CE7] mb-4">
+                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-as-violet mb-4">
                         Let's talk
                     </p>
-                    <h2 className="font-extrabold tracking-tighter text-[#0A0A1A] text-4xl sm:text-5xl leading-[1.04]">
+                    <h2 className="font-extrabold tracking-tighter text-as-ink text-4xl sm:text-5xl leading-[1.04]">
                         Book a free, no-pressure demo for your business.
                     </h2>
-                    <p className="mt-5 text-[#4A4A5A] text-base sm:text-lg leading-relaxed">
+                    <p className="mt-5 text-as-ink-soft text-base sm:text-lg leading-relaxed">
                         30 minutes. We'll show you a live AI agent built around
                         your exact use case — and give you a clear ROI estimate.
                     </p>
@@ -112,16 +112,16 @@ export default function Contact() {
                         target="_blank"
                         rel="noreferrer"
                         data-testid="calendly-cta"
-                        className="mt-8 group flex items-center gap-4 p-5 rounded-2xl bg-white border border-black/5 hover:border-[#6C5CE7]/30 hover:shadow-[0_18px_50px_rgba(108,92,231,0.12)] transition-all"
+                        className="mt-8 group flex items-center gap-4 p-5 rounded-2xl bg-as-bg border border-as-border hover:border-as-violet/30 hover:shadow-[0_18px_50px_rgba(108,92,231,0.12)] transition-all"
                     >
-                        <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#6C5CE7] text-white shadow-[0_8px_24px_rgba(108,92,231,0.4)]">
+                        <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-as-violet text-white shadow-[0_8px_24px_rgba(108,92,231,0.4)]">
                             <Calendar size={20} />
                         </span>
                         <div className="flex-1">
-                            <p className="font-bold text-[#0A0A1A]">
+                            <p className="font-bold text-as-ink">
                                 Book on Calendly
                             </p>
-                            <p className="text-sm text-[#4A4A5A]">
+                            <p className="text-sm text-as-ink-soft">
                                 Pick a slot that suits you →
                             </p>
                         </div>
@@ -146,17 +146,17 @@ export default function Contact() {
                         </div>
                     </a>
 
-                    <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-[#4A4A5A]">
+                    <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-as-ink-soft">
                         <a
                             href="tel:+917989831473"
-                            className="inline-flex items-center gap-2 hover:text-[#0A0A1A]"
+                            className="inline-flex items-center gap-2 hover:text-as-ink"
                         >
                             <Phone size={14} className="text-[#6C5CE7]" /> +91
                             79898 31473
                         </a>
                         <a
                             href="mailto:autosolutions297@gmail.com"
-                            className="inline-flex items-center gap-2 hover:text-[#0A0A1A]"
+                            className="inline-flex items-center gap-2 hover:text-as-ink"
                         >
                             <Mail size={14} className="text-[#6C5CE7]" />{" "}
                             autosolutions297@gmail.com
@@ -169,7 +169,7 @@ export default function Contact() {
                     <form
                         onSubmit={onSubmit}
                         data-testid="contact-form"
-                        className="rounded-3xl p-8 md:p-10 bg-white border border-black/5 shadow-[0_24px_70px_rgba(10,10,26,0.05)]"
+                        className="rounded-3xl p-8 md:p-10 bg-as-bg border border-as-border shadow-[0_24px_70px_rgba(10,10,26,0.05)]"
                     >
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                             <Field
@@ -199,7 +199,7 @@ export default function Contact() {
                                     value={form.business_type}
                                     onChange={onChange}
                                     data-testid="contact-input-business-type"
-                                    className="w-full rounded-xl border border-black/10 bg-white px-4 py-3 text-[15px] text-[#0A0A1A] focus:outline-none focus:ring-2 focus:ring-[#6C5CE7]/40 focus:border-[#6C5CE7]"
+                                    className="w-full rounded-xl border border-as-border bg-as-bg px-4 py-3 text-[15px] text-as-ink focus:outline-none focus:ring-2 focus:ring-as-violet/40 focus:border-as-violet"
                                 >
                                     {BUSINESS_TYPES.map((b) => (
                                         <option key={b} value={b}>
@@ -228,7 +228,7 @@ export default function Contact() {
                                     rows={4}
                                     placeholder="e.g. We miss too many patient calls after 8pm — want a voice agent that books appointments."
                                     data-testid="contact-input-message"
-                                    className="w-full rounded-xl border border-black/10 bg-white px-4 py-3 text-[15px] text-[#0A0A1A] focus:outline-none focus:ring-2 focus:ring-[#6C5CE7]/40 focus:border-[#6C5CE7] resize-y"
+                                    className="w-full rounded-xl border border-as-border bg-as-bg px-4 py-3 text-[15px] text-as-ink focus:outline-none focus:ring-2 focus:ring-as-violet/40 focus:border-as-violet resize-y"
                                 />
                             </div>
                         </div>
@@ -255,7 +255,7 @@ export default function Contact() {
                         )}
 
                         <div className="mt-7 flex items-center justify-between gap-4 flex-wrap">
-                            <p className="text-xs text-[#8A8A9A]">
+                            <p className="text-xs text-as-ink-muted">
                                 We respond within 24 hours. By submitting you
                                 agree to our privacy policy.
                             </p>
@@ -263,7 +263,7 @@ export default function Contact() {
                                 type="submit"
                                 onClick={() => {}}
                                 data-testid="contact-form-submit"
-                                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#6C5CE7] text-white font-semibold shadow-[0_10px_28px_rgba(108,92,231,0.45)] hover:bg-[#5A4BD1] transition-colors disabled:opacity-60"
+                                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-as-violet text-white font-semibold shadow-[0_10px_28px_rgba(108,92,231,0.45)] hover:bg-as-violet-hover transition-colors disabled:opacity-60"
                                 disabled={submitting}
                             >
                                 <span className="inline-flex items-center gap-2">
@@ -300,7 +300,7 @@ function Field({
         <div>
             <label
                 htmlFor={name}
-                className="block text-xs tracking-[0.18em] uppercase font-bold text-[#6C5CE7] mb-2"
+                className="block text-xs tracking-[0.18em] uppercase font-bold text-as-violet mb-2"
             >
                 {label}
                 {required && <span className="text-red-500 ml-1">*</span>}
@@ -314,7 +314,7 @@ function Field({
                 placeholder={placeholder}
                 required={required}
                 data-testid={testId}
-                className="w-full rounded-xl border border-black/10 bg-white px-4 py-3 text-[15px] text-[#0A0A1A] placeholder:text-[#8A8A9A] focus:outline-none focus:ring-2 focus:ring-[#6C5CE7]/40 focus:border-[#6C5CE7]"
+                className="w-full rounded-xl border border-as-border bg-as-bg px-4 py-3 text-[15px] text-as-ink placeholder:text-as-ink-muted focus:outline-none focus:ring-2 focus:ring-as-violet/40 focus:border-as-violet"
             />
         </div>
     );

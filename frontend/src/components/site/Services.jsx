@@ -59,17 +59,17 @@ export default function Services() {
         >
             <div className="max-w-7xl mx-auto px-6 md:px-10">
                 <div className="max-w-3xl mb-14 md:mb-20">
-                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#6C5CE7] mb-4">
+                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-as-violet mb-4">
                         Our AI Solutions
                     </p>
-                    <h2 className="font-extrabold tracking-tighter text-[#0A0A1A] text-4xl sm:text-5xl lg:text-[56px] leading-[1.02]">
+                    <h2 className="font-extrabold tracking-tighter text-as-ink text-4xl sm:text-5xl lg:text-[56px] leading-[1.02]">
                         Six building blocks.
                         <br />
-                        <span className="text-[#6C5CE7]">
+                        <span className="text-as-violet">
                             One unstoppable business.
                         </span>
                     </h2>
-                    <p className="mt-5 text-[#4A4A5A] text-base sm:text-lg leading-relaxed">
+                    <p className="mt-5 text-as-ink-soft text-base sm:text-lg leading-relaxed">
                         Each AutoSolutions module is production-grade and works
                         beautifully on its own — combine them and your business
                         runs itself.
@@ -89,27 +89,27 @@ export default function Services() {
                                 ease: [0.25, 1, 0.5, 1],
                             }}
                             style={{ transformPerspective: 1000 }}
-                            className="group relative rounded-2xl p-7 as-glass hover:-translate-y-1 hover:shadow-[0_18px_60px_rgba(108,92,231,0.15)] transition-all duration-300"
+                            className="group relative rounded-2xl p-7 as-glass hover:-translate-y-1 transition-all duration-300"
                             data-testid={`service-card-${i}`}
                         >
                             {/* Icon block */}
-                            <div className="relative mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#6C5CE7] text-white shadow-[0_8px_24px_rgba(108,92,231,0.4)]">
+                            <div className="relative mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-as-violet text-white">
                                 <s.icon size={20} strokeWidth={2} />
-                                <span className="absolute -inset-1 rounded-xl bg-[#6C5CE7] opacity-20 blur-md -z-10" />
+                                <span className="absolute -inset-1 rounded-xl bg-as-violet opacity-20 blur-md -z-10" />
                             </div>
-                            <h3 className="font-bold text-xl tracking-tight text-[#0A0A1A] mb-3">
+                            <h3 className="font-bold text-xl tracking-tight text-as-ink mb-3">
                                 {s.title}
                             </h3>
-                            <p className="text-[#4A4A5A] text-[15px] leading-relaxed">
+                            <p className="text-as-ink-soft text-[15px] leading-relaxed">
                                 {s.desc}
                             </p>
                             <ul className="mt-5 space-y-2">
                                 {s.bullets.map((b) => (
                                     <li
                                         key={b}
-                                        className="flex items-center gap-2 text-sm text-[#0A0A1A]/80"
+                                        className="flex items-center gap-2 text-sm text-as-ink/80"
                                     >
-                                        <span className="h-1.5 w-1.5 rounded-full bg-[#6C5CE7]" />
+                                        <span className="h-1.5 w-1.5 rounded-full bg-as-violet" />
                                         {b}
                                     </li>
                                 ))}
@@ -117,7 +117,7 @@ export default function Services() {
                             {/* Decorative number */}
                             <span
                                 aria-hidden
-                                className="absolute top-5 right-6 text-[12px] font-mono font-semibold text-[#8A8A9A]/40"
+                                className="absolute top-5 right-6 text-[12px] font-mono font-semibold text-as-ink-muted/40"
                             >
                                 0{i + 1}
                             </span>

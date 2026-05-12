@@ -15,6 +15,19 @@
     --as-glass: rgba(255, 255, 255, 0.7);
 }
 
+.dark {
+    --as-bg: #0a0a1a;
+    --as-bg-soft: #12122b;
+    --as-ink: #ffffff;
+    --as-ink-soft: #a0a0b8;
+    --as-ink-muted: #6b6b80;
+    --as-violet: #8172ff;
+    --as-violet-hover: #9488ff;
+    --as-violet-soft: rgba(129, 114, 255, 0.1);
+    --as-border: rgba(255, 255, 255, 0.08);
+    --as-glass: rgba(10, 10, 26, 0.7);
+}
+
 html,
 body {
     margin: 0;
@@ -179,6 +192,28 @@ body {
         --input: 240 6% 92%;
         --ring: 251 73% 63%;
         --radius: 0.75rem;
+    }
+
+    .dark {
+        --background: 240 50% 5%;
+        --foreground: 0 0% 100%;
+        --card: 240 50% 5%;
+        --card-foreground: 0 0% 100%;
+        --popover: 240 50% 5%;
+        --popover-foreground: 0 0% 100%;
+        --primary: 251 73% 63%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 240 4% 15%;
+        --secondary-foreground: 0 0% 100%;
+        --muted: 240 4% 15%;
+        --muted-foreground: 240 5% 70%;
+        --accent: 240 4% 15%;
+        --accent-foreground: 0 0% 100%;
+        --destructive: 0 62% 30%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 240 4% 15%;
+        --input: 240 4% 15%;
+        --ring: 251 73% 63%;
     }
 }
 

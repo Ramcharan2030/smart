@@ -27,16 +27,16 @@ export default function HowItWorks() {
         <section
             id="how"
             data-testid="how-it-works"
-            className="relative py-24 md:py-32 bg-[#F7F7F8]"
+            className="relative py-24 md:py-32 bg-as-bg-soft"
         >
             <div className="max-w-7xl mx-auto px-6 md:px-10">
                 <div className="max-w-3xl mb-14 md:mb-20">
-                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#6C5CE7] mb-4">
+                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-as-violet mb-4">
                         How it works
                     </p>
-                    <h2 className="font-extrabold tracking-tighter text-[#0A0A1A] text-4xl sm:text-5xl leading-[1.04]">
+                    <h2 className="font-extrabold tracking-tighter text-as-ink text-4xl sm:text-5xl leading-[1.04]">
                         From first call to fully automated —{" "}
-                        <span className="text-[#6C5CE7]">in under 2 weeks.</span>
+                        <span className="text-as-violet">in under 2 weeks.</span>
                     </h2>
                 </div>
 
@@ -49,7 +49,7 @@ export default function HowItWorks() {
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 1.2, ease: "easeOut" }}
                         style={{ transformOrigin: "left center" }}
-                        className="hidden md:block absolute top-[88px] left-[12%] right-[12%] h-px bg-gradient-to-r from-transparent via-[#6C5CE7]/40 to-transparent"
+                        className="hidden md:block absolute top-[88px] left-[12%] right-[12%] h-px bg-gradient-to-r from-transparent via-as-violet/40 to-transparent"
                     />
                     {STEPS.map((s, i) => (
                         <motion.div
@@ -62,7 +62,7 @@ export default function HowItWorks() {
                                 delay: i * 0.12,
                                 ease: "easeOut",
                             }}
-                            className="relative bg-white rounded-2xl p-8 border border-black/5"
+                            className="relative bg-as-bg rounded-2xl p-8 border border-as-border"
                             data-testid={`how-step-${i + 1}`}
                         >
                             <span
@@ -71,13 +71,13 @@ export default function HowItWorks() {
                             >
                                 {s.n}
                             </span>
-                            <div className="relative inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#6C5CE7] text-white shadow-[0_10px_30px_rgba(108,92,231,0.4)] mb-6">
+                            <div className="relative inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-as-violet text-white shadow-[0_10px_30px_rgba(108,92,231,0.4)] mb-6">
                                 <s.icon size={22} strokeWidth={2} />
                             </div>
-                            <h3 className="font-bold text-xl tracking-tight text-[#0A0A1A] mb-3">
+                            <h3 className="font-bold text-xl tracking-tight text-as-ink mb-3">
                                 {s.title}
                             </h3>
-                            <p className="text-[#4A4A5A] text-[15px] leading-relaxed">
+                            <p className="text-as-ink-soft text-[15px] leading-relaxed">
                                 {s.desc}
                             </p>
                         </motion.div>

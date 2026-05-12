@@ -1,5 +1,6 @@
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "next-themes";
 
 import SmoothScroll from "@/components/site/SmoothScroll";
 import Navbar from "@/components/site/Navbar";
@@ -49,13 +50,15 @@ function Landing() {
 function App() {
     return (
         <div className="App">
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Landing />} />
-                    <Route path="/privacy" element={<Privacy />} />
-                    <Route path="/terms" element={<Terms />} />
-                </Routes>
-            </BrowserRouter>
+            <ThemeProvider attribute="class" defaultTheme="light">
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<Landing />} />
+                        <Route path="/privacy" element={<Privacy />} />
+                        <Route path="/terms" element={<Terms />} />
+                    </Routes>
+                </BrowserRouter>
+            </ThemeProvider>
         </div>
     );
 }

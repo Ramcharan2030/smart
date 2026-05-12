@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Menu, X, Sparkles } from "lucide-react";
 import MagneticButton from "./MagneticButton";
+import ThemeToggle from "./ThemeToggle";
 
 const NAV_LINKS = [
     { label: "Home", href: "#home" },
@@ -46,7 +47,7 @@ export default function Navbar() {
             data-testid="site-navbar"
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
                 scrolled
-                    ? "backdrop-blur-xl bg-white/75 border-b border-black/5"
+                    ? "backdrop-blur-xl bg-as-bg/75 border-b border-as-border"
                     : "bg-transparent"
             }`}
         >
@@ -71,15 +72,16 @@ export default function Navbar() {
                             key={l.href}
                             onClick={() => scrollTo(l.href)}
                             data-testid={`nav-link-${l.label.toLowerCase().replace(/\s+/g, "-")}`}
-                            className="px-4 py-2 text-sm font-medium text-[#4A4A5A] hover:text-[#0A0A1A] transition-colors rounded-full hover:bg-black/[0.03]"
+                            className="px-4 py-2 text-sm font-medium text-as-ink-soft hover:text-as-ink transition-colors rounded-full hover:bg-as-border"
                         >
                             {l.label}
                         </button>
                     ))}
                 </nav>
 
-                {/* CTA */}
-                <div className="hidden md:block">
+                {/* CTA & Theme */}
+                <div className="hidden md:flex items-center gap-4">
+                    <ThemeToggle />
                     <MagneticButton
                         as="a"
                         href="#contact"
@@ -95,25 +97,28 @@ export default function Navbar() {
                 </div>
 
                 {/* Mobile toggle */}
-                <button
-                    onClick={() => setOpen((v) => !v)}
-                    aria-label="Toggle navigation"
-                    data-testid="nav-mobile-toggle"
-                    className="lg:hidden p-2 rounded-md hover:bg-black/5"
-                >
-                    {open ? <X size={20} /> : <Menu size={20} />}
-                </button>
+                <div className="flex items-center gap-3 lg:hidden">
+                    <ThemeToggle />
+                    <button
+                        onClick={() => setOpen((v) => !v)}
+                        aria-label="Toggle navigation"
+                        data-testid="nav-mobile-toggle"
+                        className="p-2 rounded-md hover:bg-as-border"
+                    >
+                        {open ? <X size={20} className="text-as-ink" /> : <Menu size={20} className="text-as-ink" />}
+                    </button>
+                </div>
             </div>
 
             {/* Mobile menu */}
             {open && (
-                <div className="lg:hidden border-t border-black/5 bg-white/90 backdrop-blur-xl">
+                <div className="lg:hidden border-t border-as-border bg-as-bg/90 backdrop-blur-xl">
                     <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-1">
                         {NAV_LINKS.map((l) => (
                             <button
                                 key={l.href}
                                 onClick={() => scrollTo(l.href)}
-                                className="text-left px-3 py-3 rounded-xl text-[15px] font-medium text-[#0A0A1A] hover:bg-black/5"
+                                className="text-left px-3 py-3 rounded-xl text-[15px] font-medium text-as-ink hover:bg-as-border"
                                 data-testid={`nav-mobile-${l.label.toLowerCase().replace(/\s+/g, "-")}`}
                             >
                                 {l.label}
@@ -122,7 +127,7 @@ export default function Navbar() {
                         <button
                             onClick={() => scrollTo("#contact")}
                             data-testid="nav-mobile-book-demo"
-                            className="mt-2 inline-flex justify-center px-5 py-3 rounded-full bg-[#6C5CE7] text-white text-sm font-semibold"
+                            className="mt-2 inline-flex justify-center px-5 py-3 rounded-full bg-as-violet text-white text-sm font-semibold"
                         >
                             Book a Free Demo
                         </button>

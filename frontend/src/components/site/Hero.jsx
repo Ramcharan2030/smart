@@ -53,7 +53,7 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 14 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, ease: "easeOut" }}
-                        className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full as-glass text-[12px] font-semibold text-[#4A4A5A] mb-7"
+                        className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full as-glass text-[12px] font-semibold text-as-ink-soft mb-7"
                         data-testid="hero-trust-badge"
                     >
                         <span className="relative flex h-2 w-2">
@@ -66,7 +66,7 @@ export default function Hero() {
 
                     {/* Headline */}
                     <h1
-                        className="font-extrabold tracking-tighter text-[#0A0A1A] leading-[0.96]"
+                        className="font-extrabold tracking-tighter text-as-ink leading-[0.96]"
                         style={{
                             fontSize: "clamp(2.6rem, 6.4vw, 5.4rem)",
                         }}
@@ -77,7 +77,7 @@ export default function Hero() {
                             data-testid="hero-headline-1"
                         />
                         <br />
-                        <span className="bg-gradient-to-r from-[#6C5CE7] via-[#6C5CE7] to-[#0A0A1A] bg-clip-text text-transparent">
+                        <span className="bg-gradient-to-r from-as-violet via-as-violet to-as-ink bg-clip-text text-transparent">
                             <TextScramble
                                 text="You Grow."
                                 duration={1300}
@@ -92,7 +92,7 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 16 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.7 }}
-                        className="mt-6 text-[#4A4A5A] text-base sm:text-lg leading-relaxed max-w-2xl"
+                        className="mt-6 text-as-ink-soft text-base sm:text-lg leading-relaxed max-w-2xl"
                         data-testid="hero-subheadline"
                     >
                         AI Voice Agents, WhatsApp Bots & Smart Automation —
@@ -111,7 +111,7 @@ export default function Hero() {
                         <MagneticButton
                             onClick={() => scrollTo("#contact")}
                             data-testid="hero-get-started-btn"
-                            className="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-[#6C5CE7] text-white font-semibold shadow-[0_8px_28px_rgba(108,92,231,0.45)] hover:bg-[#5A4BD1] transition-colors"
+                            className="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-as-violet text-white font-semibold shadow-[0_8px_28px_rgba(108,92,231,0.45)] hover:bg-as-violet-hover transition-colors"
                         >
                             <span className="inline-flex items-center gap-2">
                                 Get Started Free
@@ -121,7 +121,7 @@ export default function Hero() {
                         <MagneticButton
                             onClick={() => scrollTo("#demo")}
                             data-testid="hero-watch-demo-btn"
-                            className="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-white text-[#0A0A1A] border border-black/10 font-semibold hover:bg-black/[0.03] transition-colors"
+                            className="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-as-bg text-as-ink border border-as-border font-semibold hover:bg-as-border transition-colors"
                         >
                             <span className="inline-flex items-center gap-2">
                                 <Play size={16} className="text-[#6C5CE7]" />
@@ -135,7 +135,7 @@ export default function Hero() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.8, delay: 1.1 }}
-                        className="mt-12 flex flex-wrap items-center gap-7 text-xs text-[#8A8A9A]"
+                        className="mt-12 flex flex-wrap items-center gap-7 text-xs text-as-ink-muted"
                     >
                         {[
                             "ISO-grade infra",
@@ -199,7 +199,7 @@ function FloatingPill({ label, icon, style, delay = 1 }) {
             initial={{ opacity: 0, scale: 0.85 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay, ease: "easeOut" }}
-            className="absolute as-glass px-3 py-1.5 rounded-full text-[12px] font-semibold text-[#0A0A1A] flex items-center gap-1.5 shadow-[0_8px_24px_rgba(10,10,26,0.06)]"
+            className="absolute as-glass px-3 py-1.5 rounded-full text-[12px] font-semibold text-as-ink flex items-center gap-1.5 shadow-[0_8px_24px_rgba(10,10,26,0.06)]"
             style={style}
         >
             <span className="text-[#6C5CE7]">{icon}</span>
