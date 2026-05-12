@@ -4,19 +4,19 @@
 
 :root {
     --as-bg: #ffffff;
-    --as-bg-soft: var(--as-bg-soft);
-    --as-ink: var(--as-ink);
-    --as-ink-soft: var(--as-ink-soft);
-    --as-ink-muted: var(--as-ink-muted);
-    --as-violet: var(--as-violet);
-    --as-violet-hover: var(--as-violet-hover);
+    --as-bg-soft: #f7f7f8;
+    --as-ink: #0a0a1a;
+    --as-ink-soft: #4a4a5a;
+    --as-ink-muted: #8a8a9a;
+    --as-violet: #6c5ce7;
+    --as-violet-hover: #5a4bd1;
     --as-violet-soft: rgba(108, 92, 231, 0.08);
     --as-border: rgba(10, 10, 26, 0.06);
     --as-glass: rgba(255, 255, 255, 0.7);
 }
 
 .dark {
-    --as-bg: var(--as-ink);
+    --as-bg: #0a0a1a;
     --as-bg-soft: #12122b;
     --as-ink: #ffffff;
     --as-ink-soft: #a0a0b8;
