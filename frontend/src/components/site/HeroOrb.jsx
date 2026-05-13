@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
+import { useTheme } from "next-themes";
 
 /**
  * 3D AI neural network orb — pure vanilla Three.js (no R3F JSX) to avoid
@@ -9,10 +10,32 @@ import * as THREE from "three";
 export default function HeroOrb() {
     const mountRef = useRef(null);
     const pointer = useRef({ x: 0, y: 0 });
+    const { theme, resolvedTheme } = useTheme();
 
     useEffect(() => {
         const mount = mountRef.current;
         if (!mount) return;
+
+        const currentTheme = resolvedTheme || theme || "light";
+        const isDark = currentTheme === "dark";
+
+        // Helper to get CSS variable hex
+        const getCSSVarColor = (name) => {
+            const style = getComputedStyle(document.documentElement);
+            const val = style.getPropertyValue(name).trim();
+            if (val.startsWith("#")) return new THREE.Color(val);
+            if (val.startsWith("rgba")) {
+                const parts = val.match(/[\d.]+/g);
+                if (parts && parts.length >= 3) {
+                    return new THREE.Color(
+                        `rgb(${parts[0]}, ${parts[1]}, ${parts[2]})`,
+                    );
+                }
+            }
+            return new THREE.Color(isDark ? 0x8172ff : 0x6c5ce7);
+        };
+
+        const themeViolet = getCSSVarColor("--as-violet");
 
         const reduceMotion = window.matchMedia(
             "(prefers-reduced-motion: reduce)",
@@ -62,7 +85,7 @@ export default function HeroOrb() {
         const pointsMat = new THREE.PointsMaterial({
             size: 0.05,
             sizeAttenuation: true,
-            color: new THREE.Color("var(--as-violet)"),
+            color: themeViolet,
             transparent: true,
             opacity: 0.95,
             depthWrite: false,
@@ -98,9 +121,9 @@ export default function HeroOrb() {
             new THREE.Float32BufferAttribute(linePositions, 3),
         );
         const linesMat = new THREE.LineBasicMaterial({
-            color: new THREE.Color("var(--as-violet)"),
+            color: themeViolet,
             transparent: true,
-            opacity: 0.2,
+            opacity: isDark ? 0.2 : 0.35,
             depthWrite: false,
         });
         group.add(new THREE.LineSegments(linesGeom, linesMat));
@@ -110,9 +133,9 @@ export default function HeroOrb() {
             new THREE.Mesh(
                 new THREE.SphereGeometry(0.45, 32, 32),
                 new THREE.MeshBasicMaterial({
-                    color: 0xffffff,
+                    color: isDark ? 0xffffff : themeViolet,
                     transparent: true,
-                    opacity: 0.55,
+                    opacity: isDark ? 0.55 : 0.15,
                 }),
             ),
         );
@@ -120,9 +143,9 @@ export default function HeroOrb() {
             new THREE.Mesh(
                 new THREE.SphereGeometry(0.7, 32, 32),
                 new THREE.MeshBasicMaterial({
-                    color: new THREE.Color("var(--as-violet)"),
+                    color: themeViolet,
                     transparent: true,
-                    opacity: 0.08,
+                    opacity: isDark ? 0.08 : 0.12,
                 }),
             ),
         );
@@ -160,7 +183,9 @@ export default function HeroOrb() {
         return () => {
             cancelAnimationFrame(rafId);
             ro.disconnect();
-            mount.removeChild(renderer.domElement);
+            if (mount.contains(renderer.domElement)) {
+                mount.removeChild(renderer.domElement);
+            }
             renderer.dispose();
             pointsGeom.dispose();
             linesGeom.dispose();
@@ -171,7 +196,7 @@ export default function HeroOrb() {
                 if (obj.material) obj.material.dispose();
             });
         };
-    }, []);
+    }, [theme, resolvedTheme]);
 
     const onMouseMove = (e) => {
         const rect = e.currentTarget.getBoundingClientRect();

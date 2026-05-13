@@ -111,7 +111,7 @@ export default function Hero() {
                         <MagneticButton
                             onClick={() => scrollTo("#contact")}
                             data-testid="hero-get-started-btn"
-                            className="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-as-violet text-as-ink font-semibold shadow-[0_8px_28px_rgba(108,92,231,0.45)] hover:bg-as-violet-hover transition-colors"
+                            className="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-as-violet text-white font-semibold shadow-[0_8px_28px_rgba(108,92,231,0.45)] hover:bg-as-violet-hover transition-colors"
                         >
                             <span className="inline-flex items-center gap-2">
                                 Get Started Free
@@ -199,7 +199,7 @@ function FloatingPill({ label, icon, style, delay = 1 }) {
             initial={{ opacity: 0, scale: 0.85 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay, ease: "easeOut" }}
-            className="absolute as-glass px-3 py-1.5 rounded-full text-[12px] font-semibold text-as-ink flex items-center gap-1.5 shadow-[0_8px_24px_rgba(10,10,26,0.06)]"
+            className="absolute as-glass px-3 py-1.5 rounded-full text-[12px] font-semibold text-as-ink flex items-center gap-1.5 shadow-[0_12px_24px_rgba(10,10,26,0.12)]"
             style={style}
         >
             <span className="text-[var(--as-violet)]">{icon}</span>
