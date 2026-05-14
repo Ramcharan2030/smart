@@ -1,5 +1,5 @@
 import "@/App.css";
-import { useEffect } from "react";
+import React, { useEffect, Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
 
@@ -7,17 +7,19 @@ import SmoothScroll from "@/components/site/SmoothScroll";
 import Navbar from "@/components/site/Navbar";
 import Hero from "@/components/site/Hero";
 import SocialProofTicker from "@/components/site/SocialProofTicker";
-import Services from "@/components/site/Services";
-import HowItWorks from "@/components/site/HowItWorks";
-import Industries from "@/components/site/Industries";
-import Stats from "@/components/site/Stats";
-import Testimonials from "@/components/site/Testimonials";
-import FAQ from "@/components/site/FAQ";
-import CTABanner from "@/components/site/CTABanner";
-import Contact from "@/components/site/Contact";
 import Footer from "@/components/site/Footer";
 import WhatsAppFloat from "@/components/site/WhatsAppFloat";
-import DemoVideo from "@/components/site/DemoVideo";
+
+// Lazy loaded components for better initial performance
+const Services = lazy(() => import("@/components/site/Services"));
+const HowItWorks = lazy(() => import("@/components/site/HowItWorks"));
+const Industries = lazy(() => import("@/components/site/Industries"));
+const Stats = lazy(() => import("@/components/site/Stats"));
+const Testimonials = lazy(() => import("@/components/site/Testimonials"));
+const FAQ = lazy(() => import("@/components/site/FAQ"));
+const CTABanner = lazy(() => import("@/components/site/CTABanner"));
+const Contact = lazy(() => import("@/components/site/Contact"));
+const DemoVideo = lazy(() => import("@/components/site/DemoVideo"));
 
 
 import Privacy from "@/pages/Privacy";
@@ -30,17 +32,19 @@ function Landing() {
             <main>
                 <Hero />
                 <SocialProofTicker />
-                <DemoVideo />
-                <Services />
-                <HowItWorks />
-                <Industries />
-                <Stats />
-                <Testimonials />
-                <div id="faq">
-                    <FAQ />
-                </div>
-                <CTABanner />
-                <Contact />
+                <Suspense fallback={<div className="h-40 flex items-center justify-center opacity-0">Loading...</div>}>
+                    <DemoVideo />
+                    <Services />
+                    <HowItWorks />
+                    <Industries />
+                    <Stats />
+                    <Testimonials />
+                    <div id="faq">
+                        <FAQ />
+                    </div>
+                    <CTABanner />
+                    <Contact />
+                </Suspense>
             </main>
             <Footer />
             <WhatsAppFloat />

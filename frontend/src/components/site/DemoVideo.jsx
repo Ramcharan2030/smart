@@ -74,7 +74,8 @@ export default function DemoVideo() {
                         <video
                             ref={videoRef}
                             className="w-full h-full object-cover"
-                            poster="/logo.jpg" // Using logo as placeholder if video is slow to load
+                            poster="/logo.jpg"
+                            preload="none"
                             onClick={togglePlay}
                             onPlay={() => setIsPlaying(true)}
                             onPause={() => setIsPlaying(false)}

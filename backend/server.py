@@ -156,8 +156,8 @@ def keep_alive():
         except Exception as e:
             logger.error(f"Self-ping failed: {e}")
         
-        # Sleep for 12 minutes (720 seconds) - well within the 15-min timeout
-        time.sleep(720)
+        # Sleep for 5 minutes (300 seconds) - very safe for 15-min timeout
+        time.sleep(300)
 
 
 # Start the keep-alive thread as a daemon so it doesn't block exit
