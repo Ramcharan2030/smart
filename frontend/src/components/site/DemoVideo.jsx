@@ -76,6 +76,7 @@ export default function DemoVideo() {
                             className="w-full h-full object-cover"
                             poster="/logo.jpg"
                             preload="none"
+                            playsInline
                             onClick={togglePlay}
                             onPlay={() => setIsPlaying(true)}
                             onPause={() => setIsPlaying(false)}
