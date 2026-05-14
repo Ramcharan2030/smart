@@ -4,6 +4,9 @@ from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
 import os
 import logging
+import threading
+import time
+import requests
 from pathlib import Path
 from pydantic import BaseModel, Field, ConfigDict, EmailStr
 from typing import List, Optional
@@ -124,3 +127,38 @@ logger = logging.getLogger(__name__)
 @app.on_event("shutdown")
 async def shutdown_db_client():
     client.close()
+
+
+def keep_alive():
+    """
+    Periodic self-ping to prevent Render from sleeping.
+    Render free tier sleeps after 15 minutes of inactivity.
+    """
+    # Wait for the server to start up fully
+    time.sleep(30)
+    
+    # RENDER_EXTERNAL_URL is automatically set by Render for web services
+    url = os.environ.get("RENDER_EXTERNAL_URL") or os.environ.get("API_URL")
+    if not url:
+        logger.warning("RENDER_EXTERNAL_URL or API_URL not set. Keep-alive task will not run.")
+        return
+
+    # Normalize URL to hit the health endpoint
+    if "/api/health" not in url:
+        url = url.rstrip("/") + "/api/health"
+    
+    logger.info(f"Starting keep-alive background task targeting: {url}")
+    
+    while True:
+        try:
+            resp = requests.get(url, timeout=10)
+            logger.info(f"Self-ping successful: {resp.status_code}")
+        except Exception as e:
+            logger.error(f"Self-ping failed: {e}")
+        
+        # Sleep for 12 minutes (720 seconds) - well within the 15-min timeout
+        time.sleep(720)
+
+
+# Start the keep-alive thread as a daemon so it doesn't block exit
+threading.Thread(target=keep_alive, daemon=True).start()

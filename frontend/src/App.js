@@ -1,4 +1,5 @@
 import "@/App.css";
+import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
 
@@ -48,6 +49,25 @@ function Landing() {
 }
 
 function App() {
+    useEffect(() => {
+        const backendUrl = process.env.REACT_APP_BACKEND_URL;
+        if (!backendUrl || backendUrl.includes("localhost")) return;
+
+        const ping = async () => {
+            try {
+                await fetch(`${backendUrl}/api/health`);
+            } catch (e) {
+                // Ignore errors
+            }
+        };
+
+        // Ping every 12 minutes
+        const interval = setInterval(ping, 12 * 60 * 1000);
+        ping();
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <div className="App">
             <ThemeProvider attribute="class" defaultTheme="light">
