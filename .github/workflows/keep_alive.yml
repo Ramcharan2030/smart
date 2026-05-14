@@ -13,8 +13,10 @@ jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
-      - name: Ping Render Service
+      - name: Ping Services
         run: |
           # Use GET (-L) instead of HEAD (-I) to ensure activity is registered
+          # Pinging both Render (Backend) and Vercel (Frontend)
           curl -L https://smart-z85q.onrender.com/
           curl -L https://smart-z85q.onrender.com/api/health
+          curl -L https://autosolutions.vercel.app/
