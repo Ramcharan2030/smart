@@ -2,8 +2,11 @@ name: Keep Alive
 
 on:
   schedule:
-    # Runs every 14 minutes
-    - cron: '*/14 * * * *'
+    # Runs every 10 minutes to stay well ahead of Render's 15-min sleep timer
+    - cron: '*/10 * * * *'
+  push:
+    branches:
+      - main
   workflow_dispatch: # Allows manual triggering
 
 jobs:
@@ -12,4 +15,6 @@ jobs:
     steps:
       - name: Ping Render Service
         run: |
-          curl -I https://smart-z85q.onrender.com/
+          # Use GET (-L) instead of HEAD (-I) to ensure activity is registered
+          curl -L https://smart-z85q.onrender.com/
+          curl -L https://smart-z85q.onrender.com/api/health
