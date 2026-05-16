@@ -59,7 +59,7 @@ export default function Navbar() {
                     data-testid="nav-logo"
                 >
                     <img 
-                        src="/logo.png" 
+                        src="/logo.jpg" 
                         alt="AutoSolutions.in Logo" 
                         className="h-16 w-auto object-contain py-1" 
                     />
