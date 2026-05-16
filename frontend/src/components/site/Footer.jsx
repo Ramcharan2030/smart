@@ -54,7 +54,7 @@ export default function Footer() {
                 <div className="md:col-span-5">
                     <div className="flex items-center">
                         <img 
-                            src="/logo.jpg" 
+                            src="/logo.png" 
                             alt="AutoSolutions.in Logo" 
                             className="h-16 w-auto object-contain bg-as-bg rounded-md p-1" 
                         />
