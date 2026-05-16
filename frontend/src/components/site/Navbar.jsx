@@ -58,6 +58,7 @@ export default function Navbar() {
                     className="flex items-center group"
                     data-testid="nav-logo"
                 >
+                    {/* Re-pushed new transparent technical blue logo */}
                     <img 
                         src="/logo.png" 
                         alt="AutoSolutions.in Logo" 
