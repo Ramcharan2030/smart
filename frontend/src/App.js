@@ -45,7 +45,7 @@ function Landing() {
     return (
         <>
             <BootScreen onComplete={() => setBootComplete(true)} />
-            <SmoothScroll>
+            <SmoothScroll isLocked={!bootComplete}>
                 <Navbar />
                 <main>
                     <CinematicStoryteller />

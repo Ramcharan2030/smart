@@ -21,6 +21,11 @@ export default function BootScreen({ onComplete }) {
     const canvasRef = useRef(null);
     const mouseRef = useRef({ x: 0, y: 0 });
 
+    const onCompleteRef = useRef(onComplete);
+    useEffect(() => {
+        onCompleteRef.current = onComplete;
+    }, [onComplete]);
+
     // Tracking pointer coordinates for interactive particle wind
     useEffect(() => {
         const handlePointer = (e) => {
@@ -65,7 +70,7 @@ export default function BootScreen({ onComplete }) {
                 setTimeout(() => {
                     setIsLoaded(true);
                     setTimeout(() => {
-                        if (onComplete) onComplete();
+                        if (onCompleteRef.current) onCompleteRef.current();
                     }, 800); // Wait for zoom animation to end
                 }, 400);
             } else {
@@ -74,7 +79,7 @@ export default function BootScreen({ onComplete }) {
         }, interval);
 
         return () => clearInterval(timer);
-    }, [onComplete]);
+    }, []);
 
     // 3. Lightweight Dynamic Cyan Micro-Particle Canvas
     useEffect(() => {
@@ -110,7 +115,6 @@ export default function BootScreen({ onComplete }) {
         const render = () => {
             ctx.clearRect(0, 0, width, height);
 
-            ctx.fillStyle = "rgba(79, 209, 255, "; 
             particles.forEach((p) => {
                 // Interactive cursor wind logic
                 const dx = mouseRef.current.x - p.x;

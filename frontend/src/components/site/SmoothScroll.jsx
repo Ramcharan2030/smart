@@ -5,7 +5,7 @@ import Lenis from "lenis";
  * Wraps app with Lenis smooth momentum scroll.
  * Disabled when user prefers reduced motion.
  */
-export default function SmoothScroll({ children }) {
+export default function SmoothScroll({ children, isLocked }) {
     useEffect(() => {
         const reduce = window.matchMedia(
             "(prefers-reduced-motion: reduce)",
@@ -36,6 +36,15 @@ export default function SmoothScroll({ children }) {
             delete window.__lenis;
         };
     }, []);
+
+    useEffect(() => {
+        if (!window.__lenis) return;
+        if (isLocked) {
+            window.__lenis.stop();
+        } else {
+            window.__lenis.start();
+        }
+    }, [isLocked]);
 
     return children;
 }
