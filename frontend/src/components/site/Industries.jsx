@@ -72,12 +72,12 @@ export default function Industries() {
                     <p className="text-xs tracking-[0.2em] uppercase font-bold text-[var(--as-violet)] mb-4">
                         Industries we serve
                     </p>
-                    <h2 className="font-extrabold tracking-tighter text-[var(--as-ink)] text-4xl sm:text-5xl leading-[1.04]">
+                    <h2 className="font-extrabold tracking-tighter text-white font-display text-4xl sm:text-5xl leading-[1.04]">
                         Built for the businesses that{" "}
-                        <span className="text-[var(--as-violet)]">power India.</span>
+                        <span className="bg-gradient-to-r from-[var(--as-violet)] to-[#a855f7] bg-clip-text text-transparent">power India.</span>
                     </h2>
                 </div>
-
+ 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
                     {ITEMS.map((it, i) => (
                         <motion.div
@@ -97,18 +97,18 @@ export default function Industries() {
                                 tiltMaxAngleX={6}
                                 tiltMaxAngleY={6}
                                 transitionSpeed={1200}
-                            >
+                             >
                                 <div
-                                    className="relative h-full rounded-2xl p-7 bg-as-bg border border-as-border hover:border-[var(--as-violet)]/25 transition-colors"
+                                    className="relative h-full rounded-2xl p-7 bg-white/[0.02] backdrop-blur-sm border border-white/[0.08] hover:border-[var(--as-violet)]/30 hover:shadow-[0_12px_32px_rgba(0,0,0,0.3)] transition-all duration-300"
                                     data-testid={`industry-card-${i}`}
                                 >
-                                    <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-[var(--as-bg-soft)] text-[var(--as-violet)] border border-[var(--as-violet)]/15 mb-5">
+                                    <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-black/[0.2] text-[var(--as-violet)] border border-[var(--as-violet)]/30 mb-5">
                                         <it.icon size={20} strokeWidth={2} />
                                     </div>
-                                    <h3 className="font-bold text-lg tracking-tight text-[var(--as-ink)] mb-2">
+                                    <h3 className="font-bold text-lg tracking-tight text-white font-display mb-2">
                                         {it.title}
                                     </h3>
-                                    <p className="text-sm text-[var(--as-ink-soft)] leading-relaxed">
+                                    <p className="text-sm text-white/60 leading-relaxed">
                                         {it.desc}
                                     </p>
                                 </div>

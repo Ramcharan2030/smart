@@ -3,50 +3,65 @@ import {
     Phone,
     MessageCircle,
     Calendar,
-    Headset,
-    Megaphone,
-    BarChart3,
+    Zap,
+    Globe,
+    TrendingUp,
 } from "lucide-react";
 
 const SERVICES = [
     {
         icon: Phone,
-        title: "AI Voice Agent",
-        desc: "24/7 automated calling that books appointments, follows up on leads, and never sleeps.",
+        title: "AI Voice Receptionist",
+        desc: "Answers inbound calls, schedules appointments, answers FAQs, and transfers live in human-like conversational voice.",
         bullets: [
-            "Hindi · English · Tamil · Telugu",
-            "Books straight into your calendar",
+            "Hindi, English & regional accents",
+            "Books slots in your calendar in real-time",
         ],
     },
     {
         icon: MessageCircle,
-        title: "WhatsApp Automation Bot",
-        desc: "Instant replies, order updates, reminders, and complete two-way conversations on WhatsApp.",
-        bullets: ["Official WA Business API", "Rich media + buttons + flows"],
+        title: "24/7 WhatsApp Operator",
+        desc: "Qualifies cold leads instantly, replies to questions, dispatches reminders, and dispatches direct payment links.",
+        bullets: [
+            "Official WhatsApp API verified",
+            "Interactive buttons + flows",
+        ],
+    },
+    {
+        icon: Zap,
+        title: "Autonomous Operations",
+        desc: "Synchronizes appointment bookings, spreadsheets, internal CRMs, and alert workflows on complete autopilot.",
+        bullets: [
+            "Google Sheets + custom CRM sync",
+            "Zero human action required",
+        ],
     },
     {
         icon: Calendar,
-        title: "Smart Appointment Booking",
-        desc: "Automated confirmations and reminders to slash your no-show rate by up to 60%.",
-        bullets: ["1-tap rescheduling", "Calendar + CRM sync"],
+        title: "Smart Booking Coordinator",
+        desc: "Verifies slot availability dynamically in real time, locking appointments and cutting no-shows by up to 60%.",
+        bullets: [
+            "Real-time database verification",
+            "1-tap rescheduling triggers",
+        ],
     },
     {
-        icon: Headset,
-        title: "AI Customer Support",
-        desc: "Handles FAQs, complaints, and queries — without a single staff member breaking a sweat.",
-        bullets: ["Trained on your business", "Live agent handover"],
+        icon: Globe,
+        title: "Multilingual Speech Layer",
+        desc: "Operates seamlessly in Hindi, English, Tamil, Telugu, and Kannada with native accents and local grammar.",
+        bullets: [
+            "Human-like conversational pacing",
+            "Intent & emotion-aware speech",
+        ],
     },
     {
-        icon: Megaphone,
-        title: "Lead Follow-up Bot",
-        desc: "Nurture and convert your leads automatically with multi-touch, intent-aware sequences.",
-        bullets: ["Drip across SMS + WA + Voice", "Score intent in real time"],
-    },
-    {
-        icon: BarChart3,
-        title: "Analytics Dashboard",
-        desc: "See every interaction, conversion, and rupee of ROI in one beautifully simple dashboard.",
-        bullets: ["Live conversation stream", "Funnels + cohorts + exports"],
+        icon: TrendingUp,
+        title: "Lead Nurturing Sequences",
+        desc: "Fires multi-touch drip flows across Voice, WhatsApp, and SMS to recover cold prospects and double conversions.",
+        bullets: [
+            "Predictive follow-up timing",
+            "Intent-aware text triggers",
+        ],
     },
 ];
 
@@ -59,20 +74,18 @@ export default function Services() {
         >
             <div className="max-w-7xl mx-auto px-6 md:px-10">
                 <div className="max-w-3xl mb-14 md:mb-20">
-                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-as-violet mb-4">
-                        Our AI Solutions
+                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[var(--as-violet)] mb-4">
+                        Capabilities
                     </p>
-                    <h2 className="font-extrabold tracking-tighter text-as-ink text-4xl sm:text-5xl lg:text-[56px] leading-[1.02]">
-                        Six building blocks.
+                    <h2 className="font-extrabold tracking-tighter text-white font-display text-4xl sm:text-5xl lg:text-[56px] leading-[1.02]">
+                        What Your
                         <br />
-                        <span className="text-as-violet">
-                            One unstoppable business.
+                        <span className="bg-gradient-to-r from-[var(--as-violet)] to-[#a855f7] bg-clip-text text-transparent">
+                            AI Employee Can Do.
                         </span>
                     </h2>
-                    <p className="mt-5 text-as-ink-soft text-base sm:text-lg leading-relaxed">
-                        Each AutoSolutions module is production-grade and works
-                        beautifully on its own — combine them and your business
-                        runs itself.
+                    <p className="mt-5 text-white/60 text-base sm:text-lg leading-relaxed">
+                        We don't build generic chatbots. We deploy autonomous operational systems that act as highly-capable digital team members, active 24/7.
                     </p>
                 </div>
 
@@ -89,27 +102,26 @@ export default function Services() {
                                 ease: [0.25, 1, 0.5, 1],
                             }}
                             style={{ transformPerspective: 1000 }}
-                            className="group relative rounded-2xl p-7 as-glass hover:-translate-y-1 transition-all duration-300"
+                            className="group relative rounded-2xl p-7 bg-white/[0.02] border border-white/[0.08] hover:-translate-y-2 hover:border-[rgba(var(--as-violet-rgb),0.3)] hover:shadow-[0_20px_50px_rgba(124,58,237,0.06)] transition-all duration-500"
                             data-testid={`service-card-${i}`}
                         >
                             {/* Icon block */}
-                            <div className="relative mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-as-violet text-as-ink">
+                            <div className="relative mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/[0.02] border border-white/[0.08] text-[var(--as-violet)] shadow-[0_0_20px_rgba(var(--as-violet-rgb),0.1)] group-hover:bg-[var(--as-violet)] group-hover:text-white group-hover:shadow-[0_0_24px_rgba(var(--as-violet-rgb),0.35)] transition-all duration-500">
                                 <s.icon size={20} strokeWidth={2} />
-                                <span className="absolute -inset-1 rounded-xl bg-as-violet opacity-20 blur-md -z-10" />
                             </div>
-                            <h3 className="font-bold text-xl tracking-tight text-as-ink mb-3">
+                            <h3 className="font-bold text-xl tracking-tight text-white mb-3 font-display">
                                 {s.title}
                             </h3>
-                            <p className="text-as-ink-soft text-[15px] leading-relaxed">
+                            <p className="text-white/60 text-[15px] leading-relaxed">
                                 {s.desc}
                             </p>
                             <ul className="mt-5 space-y-2">
                                 {s.bullets.map((b) => (
                                     <li
                                         key={b}
-                                        className="flex items-center gap-2 text-sm text-as-ink/80"
+                                        className="flex items-center gap-2 text-sm text-white/80"
                                     >
-                                        <span className="h-1.5 w-1.5 rounded-full bg-as-violet" />
+                                        <span className="h-1.5 w-1.5 rounded-full bg-[var(--as-violet)] shadow-[0_0_6px_var(--as-violet)]" />
                                         {b}
                                     </li>
                                 ))}
@@ -117,7 +129,7 @@ export default function Services() {
                             {/* Decorative number */}
                             <span
                                 aria-hidden
-                                className="absolute top-5 right-6 text-[12px] font-mono font-semibold text-as-ink-muted/40"
+                                className="absolute top-5 right-6 text-[12px] font-mono font-semibold text-white/20"
                             >
                                 0{i + 1}
                             </span>

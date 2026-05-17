@@ -42,38 +42,38 @@ export default function WhatsAppFloat() {
                                     exit={{ opacity: 0, x: 20 }}
                                     className="absolute bottom-full right-0 mb-4 whitespace-nowrap"
                                 >
-                                    <div className="bg-as-bg text-[var(--as-ink)] px-4 py-2.5 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.12)] border border-as-border flex items-center gap-3">
+                                    <div className="bg-white/[0.04] backdrop-blur-xl text-white px-4 py-2.5 rounded-2xl shadow-[0_12px_32px_rgba(0,0,0,0.5)] border border-white/[0.08] flex items-center gap-3">
                                         <div className="flex flex-col">
-                                            <p className="text-[13px] font-bold leading-none">Need help?</p>
-                                            <p className="text-[11px] text-[var(--as-ink-soft)] mt-1">Chat with us on WhatsApp</p>
+                                            <p className="text-[13px] font-bold leading-none font-display">Need help?</p>
+                                            <p className="text-[11px] text-white/60 mt-1">Chat with us on WhatsApp</p>
                                         </div>
                                         <button 
                                             onClick={(e) => {
                                                 e.preventDefault();
                                                 setShowTooltip(false);
                                             }}
-                                            className="p-1 hover:bg-black/5 rounded-full transition-colors"
+                                            className="p-1 hover:bg-white/5 rounded-full transition-colors"
                                         >
-                                            <X size={14} className="text-[var(--as-ink-muted)]" />
+                                            <X size={14} className="text-white/40" />
                                         </button>
-                                        <div className="absolute top-full right-5 w-3 h-3 bg-as-bg border-r border-b border-as-border rotate-45 -translate-y-1.5" />
+                                        <div className="absolute top-full right-5 w-3 h-3 bg-[#0b1120] border-r border-b border-white/[0.08] rotate-45 -translate-y-1.5" />
                                     </div>
                                 </motion.div>
                             )}
                         </AnimatePresence>
-
+ 
                         {/* Main FAB */}
                         <a
                             href={whatsappUrl}
                             target="_blank"
                             rel="noreferrer"
-                            className="group relative flex items-center justify-center w-14 h-14 rounded-full bg-[#10B981] text-as-ink shadow-[0_10px_30px_rgba(16,185,129,0.4)] hover:shadow-[0_15px_40px_rgba(16,185,129,0.5)] transition-all duration-300 hover:scale-110 active:scale-95"
+                            className="group relative flex items-center justify-center w-14 h-14 rounded-full bg-[#10B981] text-white shadow-[0_10px_30px_rgba(16,185,129,0.4)] hover:shadow-[0_15px_40px_rgba(16,185,129,0.5)] transition-all duration-300 hover:scale-110 active:scale-95"
                         >
                             <span className="absolute inset-0 rounded-full bg-[#10B981] animate-ping opacity-20" />
                             <MessageCircle size={28} className="relative z-10" />
                             
                             {/* Hover label */}
-                            <span className="absolute right-full mr-4 px-3 py-1.5 rounded-lg bg-as-bg text-as-ink text-[12px] font-semibold opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all pointer-events-none whitespace-nowrap">
+                            <span className="absolute right-full mr-4 px-3 py-1.5 rounded-lg bg-white/[0.04] backdrop-blur-xl text-white border border-white/[0.08] shadow-[0_12px_32px_rgba(0,0,0,0.4)] text-[12px] font-semibold opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all pointer-events-none whitespace-nowrap">
                                 Chat with us
                             </span>
                         </a>

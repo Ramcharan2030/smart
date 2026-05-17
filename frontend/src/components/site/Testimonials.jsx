@@ -56,12 +56,12 @@ export default function Testimonials() {
                     <p className="text-xs tracking-[0.2em] uppercase font-bold text-[var(--as-violet)] mb-4">
                         What our clients say
                     </p>
-                    <h2 className="font-extrabold tracking-tighter text-[var(--as-ink)] text-4xl sm:text-5xl leading-[1.04]">
+                    <h2 className="font-extrabold tracking-tighter text-white font-display text-4xl sm:text-5xl leading-[1.04]">
                         Real businesses.{" "}
-                        <span className="text-[var(--as-violet)]">Real results.</span>
+                        <span className="bg-gradient-to-r from-[var(--as-violet)] to-[#a855f7] bg-clip-text text-transparent">Real results.</span>
                     </h2>
                 </div>
-
+ 
                 <div className="relative">
                     <AnimatePresence mode="wait">
                         <motion.article
@@ -70,7 +70,7 @@ export default function Testimonials() {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -20 }}
                             transition={{ duration: 0.55, ease: "easeOut" }}
-                            className="relative grid grid-cols-1 md:grid-cols-12 gap-8 items-center as-glass rounded-3xl p-8 md:p-12"
+                            className="relative grid grid-cols-1 md:grid-cols-12 gap-8 items-center as-glass rounded-3xl p-8 md:p-12 shadow-[0_24px_60px_rgba(0,0,0,0.4)] border border-white/[0.08]"
                             data-testid="testimonial-card"
                         >
                             <Quote
@@ -82,16 +82,16 @@ export default function Testimonials() {
                                     src={t.photo}
                                     alt={t.name}
                                     loading="lazy"
-                                    className="w-20 h-20 md:w-24 md:h-24 rounded-2xl object-cover border-2 border-white shadow-[0_8px_28px_rgba(10,10,26,0.08)]"
+                                    className="w-20 h-20 md:w-24 md:h-24 rounded-2xl object-cover border-2 border-white/20 shadow-[0_8px_28px_rgba(0,0,0,0.3)]"
                                 />
                                 <div className="md:mt-5">
-                                    <p className="font-bold text-[var(--as-ink)]">
+                                    <p className="font-bold text-white font-display">
                                         {t.name}
                                     </p>
-                                    <p className="text-sm text-[var(--as-ink-soft)]">
+                                    <p className="text-sm text-white/60">
                                         {t.role}
                                     </p>
-                                    <p className="text-xs text-[var(--as-ink-muted)] mt-0.5">
+                                    <p className="text-xs text-white/40 mt-0.5">
                                         {t.company}
                                     </p>
                                     <div className="flex gap-1 mt-2">
@@ -108,13 +108,13 @@ export default function Testimonials() {
                                 </div>
                             </div>
                             <div className="md:col-span-9">
-                                <p className="text-xl md:text-2xl leading-relaxed font-medium text-[var(--as-ink)] tracking-tight">
+                                <p className="text-xl md:text-2xl leading-relaxed font-medium text-white tracking-tight">
                                     “{t.quote}”
                                 </p>
                             </div>
                         </motion.article>
                     </AnimatePresence>
-
+ 
                     {/* Dots */}
                     <div className="flex items-center justify-center gap-2 mt-8">
                         {TESTIMONIALS.map((_, i) => (
@@ -125,8 +125,8 @@ export default function Testimonials() {
                                 data-testid={`testimonial-dot-${i}`}
                                 className={`h-2 rounded-full transition-all ${
                                     idx === i
-                                        ? "w-8 bg-[var(--as-violet)]"
-                                        : "w-2 bg-as-bg/15 hover:bg-as-bg/30"
+                                        ? "w-8 bg-[var(--as-violet)] shadow-[0_0_12px_rgba(var(--as-violet-rgb),0.5)]"
+                                        : "w-2 bg-white/10 hover:bg-white/25"
                                 }`}
                             />
                         ))}

@@ -27,19 +27,19 @@ export default function HowItWorks() {
         <section
             id="how"
             data-testid="how-it-works"
-            className="relative py-24 md:py-32 bg-as-bg-soft"
+            className="relative py-24 md:py-32 bg-[#0b1120] border-t border-b border-white/[0.04]"
         >
             <div className="max-w-7xl mx-auto px-6 md:px-10">
                 <div className="max-w-3xl mb-14 md:mb-20">
-                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-as-violet mb-4">
+                    <p className="text-xs tracking-[0.2em] uppercase font-bold text-[var(--as-violet)] mb-4">
                         How it works
                     </p>
-                    <h2 className="font-extrabold tracking-tighter text-as-ink text-4xl sm:text-5xl leading-[1.04]">
+                    <h2 className="font-extrabold tracking-tighter text-white font-display text-4xl sm:text-5xl leading-[1.04]">
                         From first call to fully automated —{" "}
-                        <span className="text-as-violet">in under 2 weeks.</span>
+                        <span className="bg-gradient-to-r from-[var(--as-violet)] to-[#a855f7] bg-clip-text text-transparent">in under 2 weeks.</span>
                     </h2>
                 </div>
-
+ 
                 <div className="relative grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                     {/* Connecting line - desktop */}
                     <motion.div
@@ -49,7 +49,7 @@ export default function HowItWorks() {
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 1.2, ease: "easeOut" }}
                         style={{ transformOrigin: "left center" }}
-                        className="hidden md:block absolute top-[88px] left-[12%] right-[12%] h-px bg-gradient-to-r from-transparent via-as-violet/40 to-transparent"
+                        className="hidden md:block absolute top-[88px] left-[12%] right-[12%] h-px bg-gradient-to-r from-transparent via-[var(--as-violet)]/40 to-transparent"
                     />
                     {STEPS.map((s, i) => (
                         <motion.div
@@ -62,22 +62,22 @@ export default function HowItWorks() {
                                 delay: i * 0.12,
                                 ease: "easeOut",
                             }}
-                            className="relative bg-as-bg rounded-2xl p-8 border border-as-border"
+                            className="relative bg-white/[0.02] backdrop-blur-md rounded-2xl p-8 border border-white/[0.08] hover:-translate-y-1 hover:border-white/[0.12] transition-all duration-300 shadow-[0_12px_32px_rgba(0,0,0,0.3)]"
                             data-testid={`how-step-${i + 1}`}
                         >
                             <span
                                 aria-hidden
-                                className="absolute -top-4 right-6 text-[64px] font-extrabold tracking-tighter text-black/[0.05] select-none leading-none"
+                                className="absolute -top-4 right-6 text-[64px] font-extrabold tracking-tighter text-white/[0.03] select-none leading-none"
                             >
                                 {s.n}
                             </span>
-                            <div className="relative inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-as-violet text-as-ink shadow-[0_10px_30px_rgba(108,92,231,0.4)] mb-6">
+                            <div className="relative inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[var(--as-violet)] text-white shadow-[0_0_24px_rgba(var(--as-violet-rgb),0.4)] mb-6">
                                 <s.icon size={22} strokeWidth={2} />
                             </div>
-                            <h3 className="font-bold text-xl tracking-tight text-as-ink mb-3">
+                            <h3 className="font-bold text-xl tracking-tight text-white font-display mb-3">
                                 {s.title}
                             </h3>
-                            <p className="text-as-ink-soft text-[15px] leading-relaxed">
+                            <p className="text-white/60 text-[15px] leading-relaxed">
                                 {s.desc}
                             </p>
                         </motion.div>

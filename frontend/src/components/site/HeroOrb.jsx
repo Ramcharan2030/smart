@@ -149,7 +149,30 @@ export default function HeroOrb() {
                 }),
             ),
         );
-
+ 
+        // Technical futuristic holographic orbital rings
+        const ringGeom = new THREE.RingGeometry(1.68, 1.70, 64);
+        const ringMat1 = new THREE.LineBasicMaterial({
+            color: themeViolet,
+            transparent: true,
+            opacity: 0.45,
+            side: THREE.DoubleSide
+        });
+        const ring1 = new THREE.LineLoop(ringGeom, ringMat1);
+        ring1.rotation.x = Math.PI / 3.2;
+        group.add(ring1);
+ 
+        const ringGeom2 = new THREE.RingGeometry(1.92, 1.94, 64);
+        const ringMat2 = new THREE.LineBasicMaterial({
+            color: new THREE.Color("#a855f7"),
+            transparent: true,
+            opacity: 0.32,
+            side: THREE.DoubleSide
+        });
+        const ring2 = new THREE.LineLoop(ringGeom2, ringMat2);
+        ring2.rotation.y = Math.PI / 3.8;
+        group.add(ring2);
+ 
         // Animation loop
         let rafId;
         const clock = new THREE.Clock();
@@ -157,8 +180,10 @@ export default function HeroOrb() {
             const dt = clock.getDelta();
             const t = clock.elapsedTime;
             if (!reduceMotion) {
-                group.rotation.y += dt * 0.2;
-                group.rotation.x += dt * 0.05;
+                group.rotation.y += dt * 0.25;
+                group.rotation.x += dt * 0.06;
+                ring1.rotation.z += dt * 0.45;
+                ring2.rotation.z -= dt * 0.28;
                 group.position.x = pointer.current.x * 0.18;
                 group.position.y = pointer.current.y * 0.12;
                 const s = 1 + Math.sin(t * 1.2) * 0.025;
@@ -220,7 +245,7 @@ export default function HeroOrb() {
                 className="absolute inset-0 pointer-events-none"
                 style={{
                     background:
-                        "radial-gradient(closest-side, rgba(108,92,231,0.22), rgba(108,92,231,0.08) 50%, transparent 75%)",
+                        "radial-gradient(closest-side, rgba(var(--as-violet-rgb), 0.22), rgba(var(--as-violet-rgb), 0.08) 50%, transparent 75%)",
                     filter: "blur(8px)",
                 }}
             />

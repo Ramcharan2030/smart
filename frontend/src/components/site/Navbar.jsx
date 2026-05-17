@@ -47,7 +47,7 @@ export default function Navbar() {
             data-testid="site-navbar"
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
                 scrolled
-                    ? "backdrop-blur-xl bg-as-bg/85 border-b border-as-border shadow-sm"
+                    ? "backdrop-blur-xl bg-black/[0.15] border-b border-white/[0.06] shadow-[0_4px_30px_rgba(0,0,0,0.5)]"
                     : "bg-transparent"
             }`}
         >
@@ -58,14 +58,13 @@ export default function Navbar() {
                     className="flex items-center group"
                     data-testid="nav-logo"
                 >
-                    {/* Re-pushed new transparent technical blue logo */}
                     <img 
                         src="/logo.png" 
                         alt="AutoSolutions.in Logo" 
-                        className="h-16 w-auto object-contain py-1" 
+                        className="h-24 md:h-28 w-auto object-contain -my-6 md:-my-8" 
                     />
                 </button>
-
+ 
                 {/* Links */}
                 <nav className="hidden lg:flex items-center gap-1">
                     {NAV_LINKS.map((l) => (
@@ -73,13 +72,13 @@ export default function Navbar() {
                             key={l.href}
                             onClick={() => scrollTo(l.href)}
                             data-testid={`nav-link-${l.label.toLowerCase().replace(/\s+/g, "-")}`}
-                            className="px-4 py-2 text-sm font-semibold text-as-ink/80 hover:text-as-ink transition-colors rounded-full hover:bg-as-border"
+                            className="px-4 py-2 text-sm font-semibold text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/[0.04]"
                         >
                             {l.label}
                         </button>
                     ))}
                 </nav>
-
+ 
                 {/* CTA & Theme */}
                 <div className="hidden md:flex items-center gap-4">
                     <ThemeToggle />
@@ -91,7 +90,7 @@ export default function Navbar() {
                             scrollTo("#contact");
                         }}
                         data-testid="nav-book-demo-btn"
-                        className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-[var(--as-violet)] text-white text-sm font-semibold shadow-[0_6px_22px_rgba(108,92,231,0.45)] hover:bg-[var(--as-violet-hover)] transition-colors"
+                        className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-[var(--as-violet)] text-white text-sm font-semibold shadow-[0_0_24px_rgba(var(--as-violet-rgb),0.35)] hover:bg-[var(--as-violet-hover)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
                     >
                         Book a Free Demo
                     </MagneticButton>
@@ -128,7 +127,7 @@ export default function Navbar() {
                         <button
                             onClick={() => scrollTo("#contact")}
                             data-testid="nav-mobile-book-demo"
-                            className="mt-2 inline-flex justify-center px-5 py-3 rounded-full bg-as-violet text-white text-sm font-semibold shadow-lg shadow-as-violet/25"
+                            className="mt-2 inline-flex justify-center px-5 py-3 rounded-full bg-[var(--as-violet)] text-white text-sm font-semibold shadow-lg shadow-[rgba(var(--as-violet-rgb),0.25)]"
                         >
                             Book a Free Demo
                         </button>

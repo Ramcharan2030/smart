@@ -12,6 +12,7 @@ import WhatsAppFloat from "@/components/site/WhatsAppFloat";
 
 // Lazy loaded components for better initial performance
 const Services = lazy(() => import("@/components/site/Services"));
+const WorkflowVisualization = lazy(() => import("@/components/site/WorkflowVisualization"));
 const HowItWorks = lazy(() => import("@/components/site/HowItWorks"));
 const Industries = lazy(() => import("@/components/site/Industries"));
 const Stats = lazy(() => import("@/components/site/Stats"));
@@ -35,6 +36,7 @@ function Landing() {
                 <Suspense fallback={<div className="h-40 flex items-center justify-center opacity-0">Loading...</div>}>
                     <DemoVideo />
                     <Services />
+                    <WorkflowVisualization />
                     <HowItWorks />
                     <Industries />
                     <Stats />
@@ -74,7 +76,7 @@ function App() {
 
     return (
         <div className="App">
-            <ThemeProvider attribute="class" defaultTheme="light">
+            <ThemeProvider attribute="class" defaultTheme="dark">
                 <BrowserRouter>
                     <Routes>
                         <Route path="/" element={<Landing />} />

@@ -47,28 +47,28 @@ export default function DemoVideo() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.1 }}
-                        className="font-extrabold tracking-tighter text-[var(--as-ink)] text-4xl sm:text-5xl leading-[1.04] mb-6"
+                        className="font-extrabold tracking-tighter text-white font-display text-4xl sm:text-5xl leading-[1.04] mb-6"
                     >
-                        Experience the power of <span className="text-[var(--as-violet)]">AutoSolutions</span>
+                        Experience the power of <span className="bg-gradient-to-r from-[var(--as-violet)] to-[#a855f7] bg-clip-text text-transparent">AutoSolutions</span>
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 15 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.2 }}
-                        className="text-[var(--as-ink-soft)] text-lg leading-relaxed"
+                        className="text-white/60 text-lg leading-relaxed"
                     >
                         Watch how our AI agents handle calls, book appointments, and manage leads with human-like intelligence.
                     </motion.p>
                 </div>
-
+ 
                 {/* Video Container */}
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                    className="relative max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-[0_32px_80px_rgba(108,92,231,0.15)] border border-as-border as-glass"
+                    className="relative max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-[0_32px_80px_rgba(0,0,0,0.55)] border border-white/[0.08] as-glass"
                 >
                     <div className="aspect-video relative bg-black/5">
                         <video
@@ -84,7 +84,7 @@ export default function DemoVideo() {
                             <source src="/demo.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
-
+ 
                         {/* Play Overlay */}
                         {!isPlaying && (
                             <div 
@@ -94,7 +94,7 @@ export default function DemoVideo() {
                                 <motion.div
                                     whileHover={{ scale: 1.1 }}
                                     whileTap={{ scale: 0.9 }}
-                                    className="w-20 h-20 rounded-full bg-[var(--as-violet)] text-as-ink flex items-center justify-center shadow-[0_15px_40px_rgba(108,92,231,0.5)] group-hover:bg-[var(--as-violet-hover)] transition-colors"
+                                    className="w-20 h-20 rounded-full bg-[var(--as-violet)] text-white flex items-center justify-center shadow-[0_0_32px_rgba(var(--as-violet-rgb),0.55)] group-hover:bg-[var(--as-violet-hover)] transition-all duration-300"
                                 >
                                     <Play size={32} fill="currentColor" className="ml-1" />
                                 </motion.div>

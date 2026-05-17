@@ -34,6 +34,8 @@ export default function CustomCursor() {
             mx = e.clientX;
             my = e.clientY;
             dot.style.transform = `translate3d(${mx}px, ${my}px, 0) translate(-50%, -50%)`;
+            document.documentElement.style.setProperty("--mouse-x", `${mx}px`);
+            document.documentElement.style.setProperty("--mouse-y", `${my}px`);
         };
 
         const onOver = (e) => {
@@ -82,7 +84,7 @@ export default function CustomCursor() {
                     height: 8,
                     borderRadius: "50%",
                     background: "var(--as-violet)",
-                    boxShadow: "0 0 16px 4px rgba(108, 92, 231, 0.55)",
+                    boxShadow: "0 0 16px 4px rgba(var(--as-violet-rgb), 0.55)",
                     pointerEvents: "none",
                     zIndex: 9998,
                     mixBlendMode: "normal",
@@ -100,7 +102,7 @@ export default function CustomCursor() {
                     width: 36,
                     height: 36,
                     borderRadius: "50%",
-                    border: "1.5px solid rgba(108, 92, 231, 0.55)",
+                    border: "1.5px solid rgba(var(--as-violet-rgb), 0.55)",
                     pointerEvents: "none",
                     zIndex: 9997,
                     transition:
@@ -112,8 +114,8 @@ export default function CustomCursor() {
         .as-cursor-ring.as-cursor-active {
           width: 56px;
           height: 56px;
-          border-color: rgba(108, 92, 231, 0.85);
-          background: rgba(108, 92, 231, 0.08);
+          border-color: rgba(var(--as-violet-rgb), 0.85);
+          background: rgba(var(--as-violet-rgb), 0.08);
         }
       `}</style>
         </>

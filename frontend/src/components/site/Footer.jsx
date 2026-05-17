@@ -56,7 +56,7 @@ export default function Footer() {
                         <img 
                             src="/logo.png" 
                             alt="AutoSolutions.in Logo" 
-                            className="h-16 w-auto object-contain bg-as-bg rounded-md p-1" 
+                            className="h-24 md:h-28 w-auto object-contain -my-6 -ml-4" 
                         />
                     </div>
                     <p className="mt-4 text-as-ink/70 max-w-md leading-relaxed">
