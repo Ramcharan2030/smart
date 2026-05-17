@@ -10,6 +10,7 @@ import SocialProofTicker from "@/components/site/SocialProofTicker";
 import Footer from "@/components/site/Footer";
 import WhatsAppFloat from "@/components/site/WhatsAppFloat";
 import BootScreen from "@/components/site/BootScreen";
+import CinematicStoryteller from "@/components/site/CinematicStoryteller";
 
 // Lazy loaded components for better initial performance
 const Services = lazy(() => import("@/components/site/Services"));
@@ -47,15 +48,13 @@ function Landing() {
             <SmoothScroll>
                 <Navbar />
                 <main>
-                    <Hero />
+                    <CinematicStoryteller />
                     <SocialProofTicker />
                     <Suspense fallback={<div className="h-40 flex items-center justify-center opacity-0">Loading...</div>}>
                         <DemoVideo />
                         <Services />
-                        <WorkflowVisualization />
                         <HowItWorks />
                         <Industries />
-                        <Stats />
                         <Testimonials />
                         <div id="faq">
                             <FAQ />
