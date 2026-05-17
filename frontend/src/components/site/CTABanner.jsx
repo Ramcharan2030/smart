@@ -15,7 +15,7 @@ export default function CTABanner() {
             data-testid="cta-banner"
             className="relative py-16 md:py-20 px-6"
         >
-            <div className="relative max-w-7xl mx-auto rounded-[32px] overflow-hidden border border-white/[0.08] bg-black/[0.3] backdrop-blur-xl shadow-[0_24px_80px_rgba(0,0,0,0.5)]">
+            <div className="relative max-w-7xl mx-auto rounded-[32px] overflow-hidden border border-white/[0.08] bg-black/[0.3] backdrop-blur-md shadow-[0_24px_80px_rgba(0,0,0,0.5)]">
                 {/* deep bg with grain */}
                 <div
                     className="absolute inset-0 bg-[#0B1120] opacity-90"
@@ -84,7 +84,7 @@ export default function CTABanner() {
                         <MagneticButton
                             onClick={scrollToContact}
                             data-testid="cta-banner-book-btn"
-                            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[var(--as-violet)] text-white font-semibold shadow-[0_0_32px_rgba(var(--as-violet-rgb),0.35)] hover:bg-[var(--as-violet-hover)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer"
+                            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[var(--as-violet)] text-white font-semibold shadow-[0_0_24px_rgba(var(--as-violet-rgb),0.2)] hover:bg-[var(--as-violet-hover)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer"
                         >
                             <span className="inline-flex items-center gap-2">
                                 Deploy Your Workforce

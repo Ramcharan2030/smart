@@ -30,7 +30,7 @@ export default function Hero() {
                 style={{
                     width: 600,
                     height: 600,
-                    background: "radial-gradient(circle, rgba(124, 58, 237, 0.25) 0%, transparent 70%)",
+                    background: "radial-gradient(circle, rgba(79, 209, 255, 0.08) 0%, transparent 70%)",
                     top: -150,
                     right: -150,
                 }}
@@ -41,7 +41,7 @@ export default function Hero() {
                 style={{
                     width: 500,
                     height: 500,
-                    background: "radial-gradient(circle, rgba(168, 85, 247, 0.18) 0%, transparent 60%)",
+                    background: "radial-gradient(circle, rgba(79, 209, 255, 0.06) 0%, transparent 60%)",
                     bottom: -150,
                     left: -100,
                 }}
@@ -113,7 +113,7 @@ export default function Hero() {
                         <MagneticButton
                             onClick={() => scrollTo("#demo")}
                             data-testid="hero-watch-demo-btn"
-                            className="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-[var(--as-violet)] text-white font-semibold shadow-[0_0_32px_rgba(var(--as-violet-rgb),0.35)] hover:bg-[var(--as-violet-hover)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer"
+                            className="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-[var(--as-violet)] text-white font-semibold shadow-[0_0_24px_rgba(var(--as-violet-rgb),0.2)] hover:bg-[var(--as-violet-hover)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer"
                         >
                             <span className="inline-flex items-center gap-2">
                                 <Play size={16} className="text-white" />
@@ -201,7 +201,7 @@ function FloatingPill({ label, icon, style, delay = 1 }) {
             initial={{ opacity: 0, scale: 0.85 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay, ease: "easeOut" }}
-            className="absolute bg-white/[0.03] backdrop-blur-xl px-4 py-2.5 rounded-full text-[12px] font-semibold text-white flex items-center gap-2 shadow-[0_12px_32px_rgba(0,0,0,0.5)] border border-white/[0.08] hover:border-[rgba(var(--as-violet-rgb),0.5)] hover:shadow-[0_0_20px_rgba(var(--as-violet-rgb),0.2)] transition-all duration-300 pointer-events-auto"
+            className="absolute bg-white/[0.03] backdrop-blur-md px-4 py-2.5 rounded-full text-[12px] font-semibold text-white flex items-center gap-2 shadow-[0_12px_32px_rgba(0,0,0,0.5)] border border-white/[0.08] hover:border-[rgba(var(--as-violet-rgb),0.5)] hover:shadow-[0_0_20px_rgba(var(--as-violet-rgb),0.2)] transition-all duration-300 pointer-events-auto"
             style={style}
         >
             <span className="text-[var(--as-violet)] flex items-center">{icon}</span>

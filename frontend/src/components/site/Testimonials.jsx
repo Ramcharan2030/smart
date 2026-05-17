@@ -47,7 +47,7 @@ export default function Testimonials() {
     return (
         <section
             data-testid="testimonials-section"
-            className="relative py-24 md:py-32"
+            className="relative py-32 md:py-40"
             onMouseEnter={() => setPaused(true)}
             onMouseLeave={() => setPaused(false)}
         >

@@ -42,7 +42,7 @@ export default function WhatsAppFloat() {
                                     exit={{ opacity: 0, x: 20 }}
                                     className="absolute bottom-full right-0 mb-4 whitespace-nowrap"
                                 >
-                                    <div className="bg-white/[0.04] backdrop-blur-xl text-white px-4 py-2.5 rounded-2xl shadow-[0_12px_32px_rgba(0,0,0,0.5)] border border-white/[0.08] flex items-center gap-3">
+                                    <div className="bg-white/[0.04] backdrop-blur-md text-white px-4 py-2.5 rounded-2xl shadow-[0_12px_32px_rgba(0,0,0,0.5)] border border-white/[0.08] flex items-center gap-3">
                                         <div className="flex flex-col">
                                             <p className="text-[13px] font-bold leading-none font-display">Need help?</p>
                                             <p className="text-[11px] text-white/60 mt-1">Chat with us on WhatsApp</p>
@@ -73,7 +73,7 @@ export default function WhatsAppFloat() {
                             <MessageCircle size={28} className="relative z-10" />
                             
                             {/* Hover label */}
-                            <span className="absolute right-full mr-4 px-3 py-1.5 rounded-lg bg-white/[0.04] backdrop-blur-xl text-white border border-white/[0.08] shadow-[0_12px_32px_rgba(0,0,0,0.4)] text-[12px] font-semibold opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all pointer-events-none whitespace-nowrap">
+                            <span className="absolute right-full mr-4 px-3 py-1.5 rounded-lg bg-white/[0.04] backdrop-blur-md text-white border border-white/[0.08] shadow-[0_12px_32px_rgba(0,0,0,0.4)] text-[12px] font-semibold opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all pointer-events-none whitespace-nowrap">
                                 Chat with us
                             </span>
                         </a>

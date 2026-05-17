@@ -106,7 +106,7 @@ export default function Contact() {
         <section
             id="contact"
             data-testid="contact-section"
-            className="relative py-24 md:py-32"
+            className="relative py-32 md:py-40"
         >
             <div className="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 lg:grid-cols-12 gap-10">
                 <div className="lg:col-span-5">
@@ -183,7 +183,7 @@ export default function Contact() {
                     <form
                         onSubmit={onSubmit}
                         data-testid="contact-form"
-                        className="rounded-3xl p-8 md:p-10 bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] shadow-[0_24px_80px_rgba(0,0,0,0.5)] relative overflow-hidden"
+                        className="rounded-3xl p-8 md:p-10 bg-white/[0.02] backdrop-blur-md border border-white/[0.08] shadow-[0_24px_80px_rgba(0,0,0,0.5)] relative overflow-hidden"
                     >
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                             <Field
@@ -311,7 +311,7 @@ export default function Contact() {
                                 type="submit"
                                 onClick={() => {}}
                                 data-testid="contact-form-submit"
-                                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[var(--as-violet)] text-white font-semibold shadow-[0_0_32px_rgba(var(--as-violet-rgb),0.35)] hover:bg-[var(--as-violet-hover)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 disabled:opacity-60 cursor-pointer"
+                                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[var(--as-violet)] text-white font-semibold shadow-[0_0_24px_rgba(var(--as-violet-rgb),0.2)] hover:bg-[var(--as-violet-hover)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 disabled:opacity-60 cursor-pointer"
                                 disabled={submitting}
                             >
                                 <span className="inline-flex items-center gap-2">

@@ -27,7 +27,7 @@ export default function HowItWorks() {
         <section
             id="how"
             data-testid="how-it-works"
-            className="relative py-24 md:py-32 bg-[#0b1120] border-t border-b border-white/[0.04]"
+            className="relative py-32 md:py-40 bg-[#0b1120] border-t border-b border-white/[0.04]"
         >
             <div className="max-w-7xl mx-auto px-6 md:px-10">
                 <div className="max-w-3xl mb-14 md:mb-20">

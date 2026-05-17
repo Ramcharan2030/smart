@@ -18,7 +18,7 @@ export default function WorkflowVisualization() {
         <section
             id="workflow"
             data-testid="workflow-section"
-            className="relative py-20 md:py-28 overflow-hidden"
+            className="relative py-32 md:py-40 overflow-hidden"
         >
             <div className="max-w-7xl mx-auto px-6 md:px-10">
                 {/* Header */}
@@ -65,7 +65,7 @@ export default function WorkflowVisualization() {
                 <div 
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
-                    className="relative w-full rounded-3xl border border-white/[0.06] bg-black/[0.2] backdrop-blur-xl p-8 md:p-12 shadow-[0_24px_80px_rgba(0,0,0,0.5)] overflow-hidden"
+                    className="relative w-full rounded-3xl border border-white/[0.06] bg-black/[0.2] backdrop-blur-md p-8 md:p-12 shadow-[0_24px_80px_rgba(0,0,0,0.5)] overflow-hidden"
                 >
                     {/* SVG Connector Background Lines */}
                     <div className="absolute inset-0 z-0 pointer-events-none hidden md:block">

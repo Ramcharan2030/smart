@@ -47,7 +47,7 @@ export default function Navbar() {
             data-testid="site-navbar"
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
                 scrolled
-                    ? "backdrop-blur-xl bg-black/[0.15] border-b border-white/[0.06] shadow-[0_4px_30px_rgba(0,0,0,0.5)]"
+                    ? "backdrop-blur-md bg-black/[0.15] border-b border-white/[0.06] shadow-[0_4px_30px_rgba(0,0,0,0.5)]"
                     : "bg-transparent"
             }`}
         >
@@ -112,7 +112,7 @@ export default function Navbar() {
 
             {/* Mobile menu */}
             {open && (
-                <div className="lg:hidden border-t border-as-border bg-as-bg/90 backdrop-blur-xl">
+                <div className="lg:hidden border-t border-as-border bg-as-bg/90 backdrop-blur-md">
                     <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-1">
                         {NAV_LINKS.map((l) => (
                             <button

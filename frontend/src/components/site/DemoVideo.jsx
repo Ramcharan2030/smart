@@ -20,7 +20,7 @@ export default function DemoVideo() {
         <section
             id="demo"
             data-testid="demo-video-section"
-            className="relative py-24 md:py-32 bg-as-bg overflow-hidden"
+            className="relative py-32 md:py-40 bg-as-bg overflow-hidden"
         >
             {/* Background decorative elements */}
             <div

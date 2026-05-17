@@ -36,7 +36,7 @@ export default function FAQ() {
     return (
         <section
             data-testid="faq-section"
-            className="relative py-24 md:py-32 bg-[#0b1120] border-t border-b border-white/[0.04]"
+            className="relative py-32 md:py-40 bg-[#0b1120] border-t border-b border-white/[0.04]"
         >
             <div className="max-w-4xl mx-auto px-6 md:px-10">
                 <div className="text-center mb-12 md:mb-16">

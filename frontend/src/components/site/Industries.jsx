@@ -65,7 +65,7 @@ export default function Industries() {
         <section
             id="industries"
             data-testid="industries-section"
-            className="relative py-24 md:py-32"
+            className="relative py-32 md:py-40"
         >
             <div className="max-w-7xl mx-auto px-6 md:px-10">
                 <div className="max-w-3xl mb-14 md:mb-20">
