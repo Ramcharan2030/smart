@@ -164,7 +164,7 @@ export default function HeroOrb() {
  
         const ringGeom2 = new THREE.RingGeometry(1.92, 1.94, 64);
         const ringMat2 = new THREE.LineBasicMaterial({
-            color: new THREE.Color("#a855f7"),
+            color: new THREE.Color("#38bdf8"),
             transparent: true,
             opacity: 0.32,
             side: THREE.DoubleSide

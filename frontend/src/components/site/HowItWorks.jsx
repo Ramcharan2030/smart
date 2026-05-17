@@ -36,7 +36,7 @@ export default function HowItWorks() {
                     </p>
                     <h2 className="font-extrabold tracking-tighter text-white font-display text-4xl sm:text-5xl leading-[1.04]">
                         From first call to fully automated —{" "}
-                        <span className="bg-gradient-to-r from-[var(--as-violet)] to-[#a855f7] bg-clip-text text-transparent">in under 2 weeks.</span>
+                        <span className="bg-gradient-to-r from-[var(--as-violet)] to-[#38bdf8] bg-clip-text text-transparent">in under 2 weeks.</span>
                     </h2>
                 </div>
  

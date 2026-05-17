@@ -99,7 +99,7 @@ export default function Stats() {
                     </p>
                     <h2 className="font-extrabold tracking-tighter text-white font-display text-4xl sm:text-5xl leading-[1.04]">
                         The kind of growth you can{" "}
-                        <span className="bg-gradient-to-r from-[var(--as-violet)] to-[#a855f7] bg-clip-text text-transparent">measure.</span>
+                        <span className="bg-gradient-to-r from-[var(--as-violet)] to-[#38bdf8] bg-clip-text text-transparent">measure.</span>
                     </h2>
                 </div>
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">

@@ -31,7 +31,7 @@ export default function WorkflowVisualization() {
                         <h2 className="font-extrabold tracking-tighter text-white font-display text-4xl sm:text-5xl lg:text-[56px] leading-[1.02]">
                             Live Operations
                             <br />
-                            <span className="bg-gradient-to-r from-[var(--as-violet)] via-[#a855f7] to-white bg-clip-text text-transparent">
+                            <span className="bg-gradient-to-r from-[var(--as-violet)] via-[#38bdf8] to-white bg-clip-text text-transparent">
                                 Pipeline Flow.
                             </span>
                         </h2>
@@ -113,16 +113,16 @@ export default function WorkflowVisualization() {
                             {/* Neon Gradients Definition */}
                             <defs>
                                 <linearGradient id="line-grad-1" x1="0%" y1="0%" x2="100%" y2="0%">
-                                    <stop offset="0%" stopColor="#7C3AED" stopOpacity="0.8" />
-                                    <stop offset="100%" stopColor="#A855F7" stopOpacity="0.8" />
+                                    <stop offset="0%" stopColor="#00D9FF" stopOpacity="0.8" />
+                                    <stop offset="100%" stopColor="#38BDF8" stopOpacity="0.8" />
                                 </linearGradient>
                                 <linearGradient id="line-grad-2" x1="0%" y1="0%" x2="100%" y2="0%">
-                                    <stop offset="0%" stopColor="#A855F7" stopOpacity="0.8" />
-                                    <stop offset="100%" stopColor="#7C3AED" stopOpacity="0.8" />
+                                    <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.8" />
+                                    <stop offset="100%" stopColor="#00D9FF" stopOpacity="0.8" />
                                 </linearGradient>
                                 <linearGradient id="neon-packet" x1="0%" y1="0%" x2="100%" y2="0%">
                                     <stop offset="0%" stopColor="transparent" />
-                                    <stop offset="50%" stopColor="#A855F7" />
+                                    <stop offset="50%" stopColor="#38BDF8" />
                                     <stop offset="100%" stopColor="white" />
                                 </linearGradient>
                             </defs>
@@ -170,7 +170,7 @@ export default function WorkflowVisualization() {
                                 }}
                                 className={`w-20 h-20 rounded-full flex items-center justify-center border transition-all duration-500 shadow-2xl cursor-pointer ${
                                     activeStage === 1 
-                                        ? "bg-gradient-to-tr from-[var(--as-violet)] to-[#a855f7] border-white/20 text-white shadow-[0_0_40px_rgba(var(--as-violet-rgb),0.4)]" 
+                                        ? "bg-gradient-to-tr from-[var(--as-violet)] to-[#38bdf8] border-white/20 text-white shadow-[0_0_40px_rgba(var(--as-violet-rgb),0.4)]" 
                                         : "bg-white/[0.03] border-white/[0.08] text-[var(--as-violet)]"
                                 }`}
                             >
@@ -252,7 +252,7 @@ export default function WorkflowVisualization() {
                                 </div>
                                 <div className="hidden sm:block">
                                     <span className="text-white/30">IS_AUTONOMOUS:</span>{" "}
-                                    <span className="text-purple-400 font-bold">TRUE</span>
+                                    <span className="text-cyan-400 font-bold">TRUE</span>
                                 </div>
                             </div>
                         </motion.div>

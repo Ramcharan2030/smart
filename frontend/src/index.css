@@ -8,10 +8,10 @@
     --as-ink: #ffffff;
     --as-ink-soft: #94a3b8;
     --as-ink-muted: #475569;
-    --as-violet: #7c3aed; /* Primary Accent */
-    --as-violet-hover: #8b5cf6; /* Glow Accent */
-    --as-violet-soft: rgba(124, 58, 237, 0.08);
-    --as-violet-rgb: 124, 58, 237;
+    --as-violet: #00D9FF; /* Electric Cyan Accent */
+    --as-violet-hover: #38BDF8; /* Glow Accent */
+    --as-violet-soft: rgba(0, 217, 255, 0.08);
+    --as-violet-rgb: 0, 217, 255;
     --as-border: rgba(255, 255, 255, 0.08);
     --as-glass: rgba(255, 255, 255, 0.04);
     
@@ -22,7 +22,7 @@
     --card-foreground: 215 20% 65%;
     --popover: 228 58% 6%;
     --popover-foreground: 0 0% 100%;
-    --primary: 258 90% 66%;
+    --primary: 189 100% 50%;
     --primary-foreground: 0 0% 100%;
     --secondary: 222 47% 11%;
     --secondary-foreground: 0 0% 100%;
@@ -34,7 +34,7 @@
     --destructive-foreground: 210 40% 98%;
     --border: 222 47% 11%;
     --input: 222 47% 11%;
-    --ring: 258 90% 66%;
+    --ring: 189 100% 50%;
     --radius: 0.75rem;
 }
 
@@ -45,10 +45,10 @@
     --as-ink: #ffffff;
     --as-ink-soft: #94a3b8;
     --as-ink-muted: #475569;
-    --as-violet: #7c3aed;
-    --as-violet-hover: #8b5cf6;
-    --as-violet-soft: rgba(124, 58, 237, 0.08);
-    --as-violet-rgb: 124, 58, 237;
+    --as-violet: #00D9FF;
+    --as-violet-hover: #38BDF8;
+    --as-violet-soft: rgba(0, 217, 255, 0.08);
+    --as-violet-rgb: 0, 217, 255;
     --as-border: rgba(255, 255, 255, 0.08);
     --as-glass: rgba(255, 255, 255, 0.04);
 }
@@ -96,7 +96,7 @@ body::after {
     pointer-events: none;
     background: radial-gradient(
         600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-        rgba(124, 58, 237, 0.045),
+        rgba(0, 217, 255, 0.045),
         transparent 80%
     );
     will-change: background;
@@ -271,7 +271,7 @@ img[src*="logo.png"] {
         --card-foreground: 215 20% 65%;
         --popover: 228 58% 6%;
         --popover-foreground: 0 0% 100%;
-        --primary: 258 90% 66%; /* Tech Violet #7C3AED */
+        --primary: 189 100% 50%; /* Electric Cyan #00D9FF */
         --primary-foreground: 0 0% 100%;
         --secondary: 222 47% 11%;
         --secondary-foreground: 0 0% 100%;
@@ -283,7 +283,7 @@ img[src*="logo.png"] {
         --destructive-foreground: 210 40% 98%;
         --border: 222 47% 11%;
         --input: 222 47% 11%;
-        --ring: 258 90% 66%;
+        --ring: 189 100% 50%;
         --radius: 0.75rem;
     }
 
@@ -294,7 +294,7 @@ img[src*="logo.png"] {
         --card-foreground: 215 20% 65%;
         --popover: 228 58% 6%;
         --popover-foreground: 0 0% 100%;
-        --primary: 258 90% 66%;
+        --primary: 189 100% 50%;
         --primary-foreground: 0 0% 100%;
         --secondary: 222 47% 11%;
         --secondary-foreground: 0 0% 100%;
@@ -306,7 +306,7 @@ img[src*="logo.png"] {
         --destructive-foreground: 210 40% 98%;
         --border: 222 47% 11%;
         --input: 222 47% 11%;
-        --ring: 258 90% 66%;
+        --ring: 189 100% 50%;
     }
 }
 

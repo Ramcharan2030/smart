@@ -74,7 +74,7 @@ export default function Industries() {
                     </p>
                     <h2 className="font-extrabold tracking-tighter text-white font-display text-4xl sm:text-5xl leading-[1.04]">
                         Built for the businesses that{" "}
-                        <span className="bg-gradient-to-r from-[var(--as-violet)] to-[#a855f7] bg-clip-text text-transparent">power India.</span>
+                        <span className="bg-gradient-to-r from-[var(--as-violet)] to-[#38bdf8] bg-clip-text text-transparent">power India.</span>
                     </h2>
                 </div>
  

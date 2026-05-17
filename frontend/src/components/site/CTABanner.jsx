@@ -47,7 +47,7 @@ export default function CTABanner() {
                     style={{
                         width: 400,
                         height: 400,
-                        background: "#A855F7",
+                        background: "#38bdf8",
                         bottom: -150,
                         left: -100,
                         opacity: 0.1,

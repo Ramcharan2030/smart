@@ -49,7 +49,7 @@ export default function DemoVideo() {
                         transition={{ duration: 0.5, delay: 0.1 }}
                         className="font-extrabold tracking-tighter text-white font-display text-4xl sm:text-5xl leading-[1.04] mb-6"
                     >
-                        Experience the power of <span className="bg-gradient-to-r from-[var(--as-violet)] to-[#a855f7] bg-clip-text text-transparent">AutoSolutions</span>
+                        Experience the power of <span className="bg-gradient-to-r from-[var(--as-violet)] to-[#38bdf8] bg-clip-text text-transparent">AutoSolutions</span>
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 15 }}

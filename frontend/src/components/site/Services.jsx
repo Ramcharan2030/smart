@@ -80,7 +80,7 @@ export default function Services() {
                     <h2 className="font-extrabold tracking-tighter text-white font-display text-4xl sm:text-5xl lg:text-[56px] leading-[1.02]">
                         What Your
                         <br />
-                        <span className="bg-gradient-to-r from-[var(--as-violet)] to-[#a855f7] bg-clip-text text-transparent">
+                        <span className="bg-gradient-to-r from-[var(--as-violet)] to-[#38bdf8] bg-clip-text text-transparent">
                             AI Employee Can Do.
                         </span>
                     </h2>

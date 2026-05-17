@@ -81,7 +81,7 @@ export default function Hero() {
                             data-testid="hero-headline-1"
                         />
                         <br />
-                        <span className="bg-gradient-to-r from-[var(--as-violet)] via-[#a855f7] to-white bg-clip-text text-transparent">
+                        <span className="bg-gradient-to-r from-[var(--as-violet)] via-[#38bdf8] to-white bg-clip-text text-transparent">
                             <TextScramble
                                 text="Running 24/7."
                                 duration={1300}
