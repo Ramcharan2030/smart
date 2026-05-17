@@ -2,24 +2,24 @@ import React, { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Terminal, Shield, Cpu, Activity } from "lucide-react";
 
+// Technical HUD Diagnostic Stream lines (declared statically outside component to satisfy ESLint)
+const DIAGNOSTIC_DATA = [
+    "ESTABLISHING SECURE CONNECTION TO AUTOSOLUTIONS CORE...",
+    "INITIALIZING NEURAL CLASSIFIERS (CONFIDENCE: 99.4%)...",
+    "SYNCING VOICE SIP PIPELINES & WHATSAPP CHANNELS...",
+    "MOUNTING COGNITIVE REASONING MATRIX...",
+    "VERIFYING DATA SECURE HANDSHAKES... OK",
+    "LOAD SYSTEM STABILIZERS... STABLE",
+    "ESTABLISHING AUTONOMOUS WORKFORCE ROUTINES...",
+    "COGNITIVE INTERFACE BOOT SUCCESSFUL.",
+];
+
 export default function BootScreen({ onComplete }) {
     const [progress, setProgress] = useState(0);
     const [statusLines, setStatusLines] = useState([]);
     const [isLoaded, setIsLoaded] = useState(false);
     const canvasRef = useRef(null);
     const mouseRef = useRef({ x: 0, y: 0 });
-
-    // Technical HUD Diagnostic Stream lines
-    const diagnosticData = [
-        "ESTABLISHING SECURE CONNECTION TO AUTOSOLUTIONS CORE...",
-        "INITIALIZING NEURAL CLASSIFIERS (CONFIDENCE: 99.4%)...",
-        "SYNCING VOICE SIP PIPELINES & WHATSAPP CHANNELS...",
-        "MOUNTING COGNITIVE REASONING MATRIX...",
-        "VERIFYING DATA SECURE HANDSHAKES... OK",
-        "LOAD SYSTEM STABILIZERS... STABLE",
-        "ESTABLISHING AUTONOMOUS WORKFORCE ROUTINES...",
-        "COGNITIVE INTERFACE BOOT SUCCESSFUL.",
-    ];
 
     // Tracking pointer coordinates for interactive particle wind
     useEffect(() => {
@@ -39,8 +39,8 @@ export default function BootScreen({ onComplete }) {
         let lineIndex = 0;
         
         const addLine = () => {
-            if (lineIndex < diagnosticData.length) {
-                setStatusLines(prev => [...prev, diagnosticData[lineIndex]]);
+            if (lineIndex < DIAGNOSTIC_DATA.length) {
+                setStatusLines(prev => [...prev, DIAGNOSTIC_DATA[lineIndex]]);
                 lineIndex++;
                 timer = setTimeout(addLine, 220 + Math.random() * 200);
             }
