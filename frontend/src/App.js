@@ -1,5 +1,5 @@
 import "@/App.css";
-import React, { useEffect, useState, Suspense, lazy } from "react";
+import React, { useEffect, Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
 
@@ -9,8 +9,6 @@ import Hero from "@/components/site/Hero";
 import SocialProofTicker from "@/components/site/SocialProofTicker";
 import Footer from "@/components/site/Footer";
 import WhatsAppFloat from "@/components/site/WhatsAppFloat";
-import BootScreen from "@/components/site/BootScreen";
-import CinematicStoryteller from "@/components/site/CinematicStoryteller";
 
 // Lazy loaded components for better initial performance
 const Services = lazy(() => import("@/components/site/Services"));
@@ -29,44 +27,30 @@ import Privacy from "@/pages/Privacy";
 import Terms from "@/pages/Terms";
 
 function Landing() {
-    const [bootComplete, setBootComplete] = useState(false);
-
-    useEffect(() => {
-        if (!bootComplete) {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "";
-        }
-        return () => {
-            document.body.style.overflow = "";
-        };
-    }, [bootComplete]);
-
     return (
-        <>
-            <BootScreen onComplete={() => setBootComplete(true)} />
-            <SmoothScroll isLocked={!bootComplete}>
-                <Navbar />
-                <main>
-                    <CinematicStoryteller />
-                    <SocialProofTicker />
-                    <Suspense fallback={<div className="h-40 flex items-center justify-center opacity-0">Loading...</div>}>
-                        <DemoVideo />
-                        <Services />
-                        <HowItWorks />
-                        <Industries />
-                        <Testimonials />
-                        <div id="faq">
-                            <FAQ />
-                        </div>
-                        <CTABanner />
-                        <Contact />
-                    </Suspense>
-                </main>
-                <Footer />
-                <WhatsAppFloat />
-            </SmoothScroll>
-        </>
+        <SmoothScroll>
+            <Navbar />
+            <main>
+                <Hero />
+                <SocialProofTicker />
+                <Suspense fallback={<div className="h-40 flex items-center justify-center opacity-0">Loading...</div>}>
+                    <DemoVideo />
+                    <Services />
+                    <WorkflowVisualization />
+                    <HowItWorks />
+                    <Industries />
+                    <Stats />
+                    <Testimonials />
+                    <div id="faq">
+                        <FAQ />
+                    </div>
+                    <CTABanner />
+                    <Contact />
+                </Suspense>
+            </main>
+            <Footer />
+            <WhatsAppFloat />
+        </SmoothScroll>
     );
 }
 
